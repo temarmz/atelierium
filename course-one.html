@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>Atelierium</title>
+
+		<!-- CSS -->
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Шрифт Open Sans -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<!-- Фоторама -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+		<!-- ЯКарты -->
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    	<script src="mapbasics.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<!-- Шапка -->
+		<header>
+			<div class="wrap">
+				<div class="thirty-padding">
+					<div class="header_contacts">
+						<ul>
+							<li>+7 (903) 692-79-71</li>
+							<li>atelierium@yandex.ru</li>
+						</ul>
+					</div>
+
+					<div class="header_logo">
+						<a href="index.html"><img class="logo" src="img/logo@2x.png" width="158px" height="131px"></a>
+					</div>
+
+					<div class="header_adress">
+						Ярославль, Майорова, 8А
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Фоторама -->
+		<div class="fotorama"
+			data-allowfullscreen="true"
+			data-nav="false"
+			data-autoplay="5000"
+			data-width="100%"
+ 			data-ratio="980/440">
+
+			<img src="img/fotorama/img-banner-course-1.jpg" height="440px">
+		</div>
+
+		<!-- Контент -->
+		<div class="content">
+			<div class="wrap">
+				<div class="thirty-padding">
+					<div class="two-columns">
+						<div class="left-column">
+
+							<div class="header">Конструирование, моделирование и&nbsp;пошив юбки, платья, блузы</div>
+
+							<p class="text-under-header">Базовый (для начинающих)</p>
+
+							<p>Как мы уже знаем, арпеджио просветляет шоу-бизнес. Лайн-ап регрессийно выстраивает флажолет. Интервально-прогрессийная континуальная форма, как бы это ни казалось парадоксальным, фактурна. Форма возможна.
+							</p>
+							<br>
+							<p>Начало занятий 21 октября (или раньше, если соберется группа в 7 человек)</p>
+
+							<div id="map">
+								<script>
+									ymaps.ready(function () {
+									    var myMap = new ymaps.Map('map', {
+									            center: [57.580502, 39.841109],
+									            zoom: 15
+									        }, {
+									            searchControlProvider: 'yandex#search'
+									        }),
+									        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+									            hintContent: 'Собственный значок метки',
+									            balloonContent: 'Это красивая метка'
+									        }, {
+									            // Опции.
+									            // Необходимо указать данный тип макета.
+									            iconLayout: 'default#image',
+									            // Своё изображение иконки метки.
+									            iconImageHref: 'images/myIcon.gif',
+									            // Размеры метки.
+									            iconImageSize: [30, 42],
+									            // Смещение левого верхнего угла иконки относительно
+									            // её "ножки" (точки привязки).
+									            iconImageOffset: [-3, -42]
+									        });
+
+									    myMap.geoObjects.add(myPlacemark);
+									});
+								</script>
+							</div>
+						</div>
+
+						<div class="right-column">
+							<div class="right-column-header">Записаться на курс</div>
+
+							<form name="write" method="post" action="input1.php">
+							 	<input class="write-input-name" type="text" placeholder="Имя">
+							 	<input class="write-input-mail" type="text" placeholder="Номер телефона">
+							 	<input class="write-input-mail" type="text" placeholder="Электропочта">
+							 	<a href="#" class="write_button">Записаться</a>
+							</form>
+							<br>
+							<p class="final-text">После записи мы вам позвоним или напишем на почту для уточнения деталей.</p>
+							<br>
+							<p class="final-text">Курс можно оплатить полностью или в рассрочку, заключив
+							договор до начала занятий.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Подвал -->
+		<div class="footer">
+			<div class="wrap">
+				<div class="thirty-padding">
+					<ul class="footer-about">
+						<li><p class="footer-header"><span class="name">ATELIERIUM</span> — пространство, где создают одежду и учат ее создавать</p></li>
+						<li><p class="footer-adress">Мы находимся в Ярославле на улице Майорова дом 8А</p></li>
+						<li>+7 (903) 692-79-71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atelierium@yandex.ru</li>
+					</ul>
+
+					<ul class="footer-developer">
+						<li><a class="grey" href="http://armeev.com" target="_blank">armeev.com</a></li>
+						<li>2015 год</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

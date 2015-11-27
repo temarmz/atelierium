@@ -1,0 +1,532 @@
+body {
+	font-family: Open Sans, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	width: 100%;
+	color: #333;
+}
+
+.wrap {
+	margin-left:auto;
+	margin-right:auto;
+	width: 980px;
+}
+
+.thirty-padding {
+	padding: 0 30px 0 30px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a.white:link {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+a.white:visited {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
+	text-decoration: none;
+}
+
+a.white:hover {
+	color: #ccc;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
+	text-decoration: none;
+}
+
+a.black:link {
+	color: #333;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+
+a.black:visited {
+	color: #333;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+
+a.black:hover {
+	color: #666;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+
+a.grey:link {
+	color: #7F7F7F;
+	border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+	text-decoration: none;
+}
+
+a.grey:visited {
+	color: #7F7F7F;
+	border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+	text-decoration: none;
+}
+
+a.grey:hover {
+	color: #706F6F;
+	border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+	text-decoration: none;
+}
+
+#map {
+	padding-top: 30px;
+	width: 550px;
+	height: 430px;
+}
+
+/* ТЕКСТ */
+
+
+/* Заголовок (на всю ширину) */
+
+.header {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 44px;
+}
+
+/* Текст под заголовком */
+
+p.text-under-header {
+	padding: 5px 0 40px 0;
+}
+
+/* Наборный текст(на всю ширину) */
+
+.text-base {
+	padding: 30px 0 30px 0;
+}
+
+/* Шапка */
+
+header {
+	height: 180px;
+}
+
+.header_contacts {
+	width: 120px;
+	float: left;
+	padding-top: 62px;
+}
+
+.header_logo {
+	float: left;
+	padding: 22px 0 0 265px;
+}
+
+.header_adress {
+	float: left;
+	text-align: left;
+	padding: 76px 0 0 215px;
+}
+
+/* Фоторама */
+
+.fotorama {
+	padding-bottom: 30px;
+}
+
+/* Контент — Текст */
+
+.content-about {
+	padding-top: 30px;
+}
+
+	p.content-about-header {
+		font-weight: 600;
+		font-size: 30px;
+	}
+
+	span.content-about-shedule {
+		font-size: 16px;
+	}
+
+	p.content-about-text {
+		font-weight: 400;
+		padding: 20px 0 40px 0;
+	}
+
+/* Контент — Карточки курсов */
+
+.content-courses {
+	list-style: none;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+}
+
+	li.course-one-two {
+		float: left;
+		width: 275px;
+		margin-right: 47.5px;
+		box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	}
+
+	li.course-three {
+		float: left;
+		width: 275px;
+		box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	}
+
+		.course-header {
+			font-weight: 400;
+			font-size: 16px;
+			padding: 8px 18px 8px 18px;
+		}
+
+		.course-about {
+			padding-left: 18px;
+		}
+
+		.course-price-1 {
+			font-size: 20px;
+			font-weight: 600;
+			padding-left: 18px;
+			margin-top: 10px;
+		}
+
+		.course-price-2 {
+			font-size: 12px;
+			padding-left: 18px;
+			margin: 4px 0 14px 0;
+		}
+
+		.price-once {
+			color: #CBCBCB;
+			font-style: italic;
+		}
+
+
+/* Контент — Новости и Обратная связь */
+
+.content-news-feedback {
+	color: #fff;
+	background-color: #292929;
+	height: 660px;
+	padding-top: 50px;
+}
+
+	.news-feedback-header {
+		font-size: 16px;
+		color: #7F7F7F;
+		padding-bottom: 35px;
+		letter-spacing: 3px;
+		font-weight: 600;
+	}
+
+	/* Новости */
+
+	.news {
+		width: 376px;
+		float: left;
+		padding-right: 20px;
+		height: 500px;
+	}
+
+	.p-date {
+		font-size: 10px;
+		margin: 0;
+		color: #7F7F7F;
+	}
+
+	.p-header {
+		font-size: 15px;
+		font-weight: 600;
+		margin: 5px 0 15px 0;
+	}
+
+	.p-text {
+		padding-bottom: 20px;
+		margin: 0 0 10px 0;
+	}
+
+	.p-all-news {
+		font-size: 16px;
+	}
+
+	/* Обратная связь */
+
+	.feedback-textarea {
+		font-size: 13px;
+		color: #fff;
+		padding: 13px 12px 0 13px;
+		margin-bottom: 6px;
+		border-style: dashed;
+		border-color: #7F7F7F;
+		border-width: 2px;
+		background-color: #1F1F1F;
+		outline: none;
+		resize: none;
+	}
+
+	.feedback-input-name {
+		font-size: 13px;
+		color: #fff;
+		padding: 0 0 0 14px;
+		margin-right: 10px;
+		height: 35px;
+		width: 150px;
+		border-style: dashed;
+		border-color: #7F7F7F;
+		border-width: 2px;
+		background-color: #1F1F1F;
+		outline: none;
+	}
+
+	.feedback-input-mail {
+		font-size: 13px;
+		color: #fff;
+		padding: 0 0 0 14px;
+		margin-right: 13px;
+		height: 35px;
+		width: 190px;
+		border-style: dashed;
+		border-color: #7F7F7F;
+		border-width: 2px;
+		background-color: #1F1F1F;
+		outline: none;
+	}
+
+	a.send_button {
+		position: absolute;
+		font-size: 13px;
+	  	color: #fff;
+	  	text-decoration: none; /* убирать подчёркивание у ссылок */
+	  	user-select: none; /* убирать выделение текста */
+	  	background: rgb(23,22,22);
+	  	padding: 8px 27px 8px 27px;
+	  	outline: none; /* убирать контур в Mozilla */
+	} 
+	a.send_button:hover { background: rgb(29,28,28); }
+	a.send_button:active { background: rgb(0,0,0); }
+
+	img.img-scissors {
+		margin: 100px 0 0 40px;
+	}
+
+	/* Блок с социалками */
+
+	.content-social {
+		height: 332px;
+		margin-top: -20px;
+	}
+
+	.insta-photo {
+		float: left;
+		width: 300px;
+	}
+
+	.social-text {
+		width: 550px;
+		padding: 140px 30px 0 0;
+		float: left;
+		margin-left: 40px;
+		line-height: 34px;
+	}
+
+	.insta-header {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.vk-text {
+		font-size: 13px;
+		padding-top: 14px;
+	}
+
+/* Подвал */
+
+.footer {
+	height: 240px;
+	background-color: #292929;
+	color: #fff;
+}
+
+ul.footer-about {
+	float: left;
+	width: 420px;
+	text-align: left;
+	position: absolute;
+	padding-top: 44px;
+}
+
+ul.footer-developer {
+	float right;
+	text-align: right;
+	padding-top: 98px;
+}
+
+p.footer-header {
+	font-size: 16px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+p.footer-adress {
+	padding-bottom: 10px;
+	font-size: 11px;
+	color: #7F7F7F;
+}
+
+.name {
+	letter-spacing: 3px;
+}
+
+
+
+
+
+/*-----  ДРУГИЕ ФАЙЛЫ  -----*/
+
+
+
+
+
+/* Страница курса */
+
+.two-columns {
+	height: 900px;
+}
+
+	/* Левая колонка */
+
+	.left-column {
+		width: 580px;
+		float: left;
+		padding-right: 30px;
+	}
+ 
+	/* Правая колонка */
+
+	.right-column {
+		width: 266px;
+		padding: 17px 22px 22px 22px;
+		background-color: #292929;
+		color: #fff;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.right-column-header {
+		font-size: 22px;
+		padding: 6px 0 28px 0;
+	}
+
+	.write-form {
+		margin-bottom: 20px;
+	}
+
+	.final-text {
+		color: #7F7F7F;
+	}
+
+	/* Формы */
+
+	.write-input-name {
+		font-size: 13px;
+		color: #fff;
+		padding: 0 0 0 14px;
+		margin-right: 10px;
+		height: 35px;
+		width: 250px;
+		border-style: dashed;
+		border-color: #7F7F7F;
+		border-width: 2px;
+		background-color: #1F1F1F;
+		outline: none;
+		margin-bottom: 20px;
+	}
+
+	.write-input-mail {
+		font-size: 13px;
+		color: #fff;
+		padding: 0 0 0 14px;
+		margin-right: 13px;
+		height: 35px;
+		width: 250px;
+		border-style: dashed;
+		border-color: #7F7F7F;
+		border-width: 2px;
+		background-color: #1F1F1F;
+		outline: none;
+		margin-bottom: 20px;
+	}
+
+	a.write_button {
+		/*position: absolute;*/
+		font-size: 13px;
+	  	color: #fff;
+	  	text-decoration: none; /* убирать подчёркивание у ссылок */
+	  	user-select: none; /* убирать выделение текста */
+	  	background: rgb(23,22,22);
+	  	padding: 12px 98px;
+	  	outline: none; /* убирать контур в Mozilla */
+	} 
+	a.write_button:hover { background: rgb(29,28,28); }
+	a.write_button:active { background: rgb(0,0,0); }
+
+
+/* Новость */
+
+.social {
+	padding-bottom: 60px;
+}
+
+
+/* Расписания */
+
+table {
+	width: 920px;
+	border-color: black;
+	margin-bottom: 60px;
+}
+
+tr {
+	text-align: left;
+	border-color: black;
+}
+
+tr.table-header {
+	background-color: #292929;
+	color: white;
+	height: 80px;
+}
+
+th {
+	padding: 10px 20px 10px 20px;
+}
+
+tr.bg-grey {
+	background-color: #F2F2F2;
+}
+
+th.col-name {
+	width: 220px;
+}
+
+th.col-cost-one {
+	width: 100px;
+}
+
+th.col-cost-two {
+	width: 100px;
+}
+
+td {
+	padding: 25px 20px 25px 20px;
+}
+
+
+/* Все новости */
+
+.news-all {
+
+}
