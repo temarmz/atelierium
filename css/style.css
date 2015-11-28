@@ -22,6 +22,16 @@ ul {
 	margin: 0;
 }
 
+#map {
+	padding-top: 30px;
+	width: 550px;
+	height: 430px;
+}
+
+/* ССЫЛКИ */
+
+/* Белые */
+
 a.white:link {
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -39,6 +49,8 @@ a.white:hover {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
 	text-decoration: none;
 }
+
+/* Черные */
 
 a.black:link {
 	color: #333;
@@ -58,6 +70,8 @@ a.black:hover {
 	text-decoration: none;
 }
 
+/* Серые */
+
 a.grey:link {
 	color: #7F7F7F;
 	border-bottom: 1px solid rgba(127, 127, 127, 0.2);
@@ -76,14 +90,7 @@ a.grey:hover {
 	text-decoration: none;
 }
 
-#map {
-	padding-top: 30px;
-	width: 550px;
-	height: 430px;
-}
-
 /* ТЕКСТ */
-
 
 /* Заголовок (на всю ширину) */
 
@@ -93,10 +100,19 @@ a.grey:hover {
 	line-height: 44px;
 }
 
+/* Заголовок (инлайновый) */
+
+.header-inline {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 44px;
+	display: inline;
+}
+
 /* Текст под заголовком */
 
 p.text-under-header {
-	padding: 5px 0 40px 0;
+	padding: 12px 0 40px 0;
 }
 
 /* Наборный текст(на всю ширину) */
@@ -131,30 +147,70 @@ header {
 /* Фоторама */
 
 .fotorama {
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
-/* Контент — Текст */
+/* Контент (Школа и Ателье) */
 
 .content-about {
 	padding-top: 30px;
 }
 
-	p.content-about-header {
-		font-weight: 600;
-		font-size: 30px;
-	}
 
-	span.content-about-shedule {
-		font-size: 16px;
-	}
+/*----------------------*/
 
-	p.content-about-text {
-		font-weight: 400;
-		padding: 20px 0 40px 0;
-	}
+.tabbed {
+	width: 980px;
+	margin: 20px 0 20px 0;
+}
 
-/* Контент — Карточки курсов */
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+	font-size: 30px;
+	font-weight: 600;
+	margin-right: 12px;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	border-style: dashed;
+}
+
+.tabbed > input:checked + label {
+  border: none;
+}
+
+.tabs > div {
+	width: 920px;
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+}
+
+#tab-nav-1 {
+  display: none;
+}
+
+#tab-nav-1:checked ~ .tabs ~ div:nth-of-type(1){
+  opacity: 1;
+  z-index: 1;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1){
+  opacity: 1;
+  z-index: 2;
+}
+
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2){
+  opacity: 1;
+  z-index: 2;
+}
+
+/*----------------------*/
+
+
+/* Контент — Школа (курсы) */
 
 .content-courses {
 	list-style: none;
@@ -204,6 +260,15 @@ header {
 			font-style: italic;
 		}
 
+/* Контент — Ателье */
+
+
+
+
+
+
+
+
 
 /* Контент — Новости и Обратная связь */
 
@@ -211,6 +276,7 @@ header {
 	color: #fff;
 	background-color: #292929;
 	height: 660px;
+	margin-top: 1100px;
 	padding-top: 50px;
 }
 
@@ -325,8 +391,8 @@ header {
 	}
 
 	.social-text {
-		width: 550px;
-		padding: 140px 30px 0 0;
+		width: 580px;
+		padding-top: 140px;
 		float: left;
 		margin-left: 40px;
 		line-height: 34px;

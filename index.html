@@ -16,6 +16,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 	</head>
 
 	<body>
@@ -57,78 +58,116 @@
 		<div class="content">
 			<div class="wrap">
 				<div class="thirty-padding">
+					<div class="tabbed">
 
-					<!-- Описание -->
-					<div class="content-about">
-						<div class="header">
-							Курсы&nbsp;&nbsp;&nbsp;
-							<span class="content-about-shedule"><a class="black" href="shedule.html">Расписание</a></span>
-						</div>
-						<p class="text-under-header">Мы обучаем шитью, ведь главной задачей ателье было передача знаний.</p>
-					</div>
-					
-					<!-- Курсы (6 штук) -->
-					<ul class="content-courses">
-						<a class="black" href="course-one.html">
-							<li class="course-one-two">
-									<img src="img/picture-course-1.jpg">
-									<div class="course-header">Конструирование, моделирование и пошив юбки, платья, блузы</div>
-									<div class="course-about"><p>Базовый (для начинающих)</p></div>
-									<img src="img/line-course.png">
-									<div class="course-price-1"><p>13 500 ₽</p></div>
-									<div class="course-price-2"><p>15 000 ₽ в рассрочку</p></div>
-							</li>
-						</a>
+						<!-- Вкладки -->
+						<input type="radio" name="tabs" id="tab-nav-1" checked>
+					    <label for="tab-nav-1">Школа</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					    <input type="radio" name="tabs" id="tab-nav-2">
+					    <label for="tab-nav-2">Ателье</label>
 
-						<li class="course-one-two">
-								<img src="img/picture-course-2.jpg">
-								<div class="course-header">Конструирование, моделирование и пошив жакета (пальто)</div>
-								<div class="course-about"><p>С навыками шитья</p></div>
-								<img class="line-course" src="img/line-course.png">
-								<div class="course-price-1"><p>13 200 ₽</p></div>
-								<div class="course-price-2"><p>15 700 ₽ в рассрочку</p></div>
-						</li>
+						<div class="tabs">
 
-						<li class="course-three">
-								<img src="img/picture-course-3.jpg">
-								<div class="course-header">Конструирование, моделирование и пошив юбки</div>
-								<div class="course-about"><p>Базовый (для начинающих)</p></div>
-								<img src="img/line-course.png">
-								<div class="course-price-1"><p>6000 ₽</p></div>
-								<div class="course-price-2"><p>8500 ₽ в рассрочку</p></div>
-						</li>
-					</ul>
+							<!-- Курсы (6 штук) -->
+							<div>
+								<p class="text-under-header">
+									<a class="black" href="shedule.html">
+										Расписание
+									</a>
+								</p>
 
-					<ul class="content-courses">
-						<li class="course-one-two">
-								<img src="img/picture-course-4.jpg">
-								<div class="course-header">Конструирование, моделирование и пошив брюк</div>
-								<div class="course-about"><p>С навыками шитья</p></div>
-								<img src="img/line-course.png">
-								<div class="course-price-1"><p>6000 ₽</p></div>
-								<div class="course-price-2"><p>8500 ₽ в рассрочку</p></div>
-						</li>
+								<ul class="content-courses">
+									<a class="black" href="course-one.html">
+										<li class="course-one-two">
+												<img src="img/picture-course-1.jpg">
+												<div class="course-header">Конструирование, моделирование и пошив юбки, платья, блузы</div>
+												<div class="course-about"><p>Базовый (для начинающих)</p></div>
+												<img src="img/line-course.png">
+												<div class="course-price-1"><p>13 500 ₽</p></div>
+												<div class="course-price-2"><p>15 000 ₽ в рассрочку</p></div>
+										</li>
+									</a>
 
-						<li class="course-one-two">
-								<img src="img/picture-course-5.jpg">
-								<div class="course-header">Особенности обработки изделий из натуральной кожи и меха</div>
-								<div class="course-about"><p>С навыками шитья</p></div>
-								<img class="line-course" src="img/line-course.png">
-								<div class="course-price-1"><p>5500 ₽</p></div>
-								<div class="course-price-2"><p class="price-once">Единоразовая оплата</p></div>
-						</li>
+									<li class="course-one-two">
+											<img src="img/picture-course-2.jpg">
+											<div class="course-header">Конструирование, моделирование и пошив жакета (пальто)</div>
+											<div class="course-about"><p>С навыками шитья</p></div>
+											<img class="line-course" src="img/line-course.png">
+											<div class="course-price-1"><p>13 200 ₽</p></div>
+											<div class="course-price-2"><p>15 700 ₽ в рассрочку</p></div>
+									</li>
 
-						<li class="course-three">
-								<img src="img/picture-course-6.jpg">
-								<div class="course-header">Особенности обработки изделий из трикотажа</div>
-								<div class="course-about"><p>С навыками шитья</p></div>
-								<img src="img/line-course.png">
-								<div class="course-price-1"><p>2500 ₽</p></div>
-								<div class="course-price-2"><p class="price-once">Единоразовая оплата</p></div>
-						</li>
-					</ul>
-				</div>
-			</div>
+									<li class="course-three">
+											<img src="img/picture-course-3.jpg">
+											<div class="course-header">Конструирование, моделирование и пошив юбки</div>
+											<div class="course-about"><p>Базовый (для начинающих)</p></div>
+											<img src="img/line-course.png">
+											<div class="course-price-1"><p>6000 ₽</p></div>
+											<div class="course-price-2"><p>8500 ₽ в рассрочку</p></div>
+									</li>
+								</ul>
+
+								<ul class="content-courses">
+									<li class="course-one-two">
+											<img src="img/picture-course-4.jpg">
+											<div class="course-header">Конструирование, моделирование и пошив брюк</div>
+											<div class="course-about"><p>С навыками шитья</p></div>
+											<img src="img/line-course.png">
+											<div class="course-price-1"><p>6000 ₽</p></div>
+											<div class="course-price-2"><p>8500 ₽ в рассрочку</p></div>
+									</li>
+
+									<li class="course-one-two">
+											<img src="img/picture-course-5.jpg">
+											<div class="course-header">Особенности обработки изделий из натуральной кожи и меха</div>
+											<div class="course-about"><p>С навыками шитья</p></div>
+											<img class="line-course" src="img/line-course.png">
+											<div class="course-price-1"><p>5500 ₽</p></div>
+											<div class="course-price-2"><p class="price-once">Единоразовая оплата</p></div>
+									</li>
+
+									<li class="course-three">
+											<img src="img/picture-course-6.jpg">
+											<div class="course-header">Особенности обработки изделий из трикотажа</div>
+											<div class="course-about"><p>С навыками шитья</p></div>
+											<img src="img/line-course.png">
+											<div class="course-price-1"><p>2500 ₽</p></div>
+											<div class="course-price-2"><p class="price-once">Единоразовая оплата</p></div>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<p class="text-under-header">
+									<a class="black" href="shedule.html">
+										Прайс-лист
+									</a>
+								</p>
+
+								<div class="content-studio-about">
+									<p>
+									Правило альтернанса вызывает сюжетный эпитет, таким образом в некоторых случаях образуются рефрены, кольцевые композиции, анафоры. Одиннадцатисложник, на первый взгляд, редуцирует абстракционизм. Абстракционизм текстологически аллитерирует зачин.
+									</p>
+									<br>
+
+									<p>
+									Познание текста диссонирует сюжетный цикл. Аллюзия редуцирует композиционный анализ. Гекзаметр неоднороден по составу.
+									</p>
+									<br>
+
+									<p>
+									Расположение эпизодов текуче. Иными словами, филиация начинает прозаический амфибрахий, при этом нельзя говорить, что это явления собственно фоники, звукописи. Олицетворение вразнобой начинает экзистенциальный анжамбеман. Действительно, коммунальный модернизм интегрирует поэтический размер. Графомания просветляет ритм, туда же попадает и еще недавно вызывавший безусловную симпатию гетевский Вертер.
+									</p>
+								</div>
+
+								<div class="content-studio-">
+								</div>
+							</div>
+
+						</div> <!-- close tabs -->
+					</div> <!-- close tabbed -->
+				</div> <!-- thirty-padding -->
+			</div> <!-- wrap -->
 
 			<div class="content-news-feedback">
 				<div class="wrap">
