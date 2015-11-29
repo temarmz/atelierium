@@ -17,6 +17,10 @@
 		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
+		<!-- Обратная связь -->
+		<link rel="stylesheet" href="css/custom.css" name="custom-styles">
+        <script src="js/val_submit.js" type="text/javascript"></script>
+
 		<!-- Фавиконка -->
 		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -258,12 +262,54 @@
 						<ul class="feedback">
 						<div class="news-feedback-header">ЕСТЬ ВОПРОСЫ?</div>
 							<li>
-								<form name="feedback" method="post" action="input1.php" >
-									<textarea rows="10" cols="20" class="feedback-textarea" name="comment" cols="40" rows="3" style="width: 495px; height: 140px;" placeholder="Спрашивайте о чем угодно"></textarea>
-								 	<input class="feedback-input-name" type="text" placeholder="Имя">
-								 	<input class="feedback-input-mail" type="text" placeholder="Электропочта">
-								 	<a href="#" class="send_button">Отправить</a>
-								</form>
+								<div id="mail_status"></div>
+									<form name="feedback" action="send_mail.php" id="contact-form" method="post" novalidate="novalidate">
+
+										<textarea rows="10" cols="20" class="feedback-textarea" id="message" name="message" cols="40" rows="3" style="width: 495px; height: 140px;" placeholder="Спрашивайте о чем угодно"></textarea>
+
+										<span id="content-info" class="info"></span><br>
+
+									 	<input class="feedback-input-name" id="name" type="text" name="name" placeholder="Имя" required/>
+
+									 	
+
+									 	<input class="feedback-input-mail" id="email" type="email" name="email" placeholder="Электропочта">
+
+
+
+									 	<a href="#" class="send_button" type="submit" name="submit" onclick="sendContact(); return false;">Отправить</a>
+
+									 	<br>
+
+									 	<span id="userName-info" class="info"></span>
+									 	<span id="userEmail-info" class="info"></span>
+
+									</form>
+
+
+
+								<!-- Из Slides -->
+							    <!-- <div id="mail-status"></div>
+							      <form class="wide center" action="send_mail.php" id="contact-form" method="post" novalidate="novalidate">
+
+							        <label class="uppercase ae-4" for="name">Your name</label>
+							        <input class="stroke round ae-5 wide" id="name" name="name" type="text" placeholder="Name" required/>
+
+							        <span id="userName-info" class="info"></span>
+
+							        <label class="uppercase ae-6" for="email">Email</label>
+							        <input class="stroke round ae-7 wide" id="email" type="email" name="email" placeholder="Email" required/>
+
+							        <span id="userEmail-info" class="info"></span>
+
+							        <label class="uppercase ae-8" for="message">Message</label>
+
+							        <textarea class="stroke round left ae-9 sourceSans" id="message" name="message" placeholder="Message" required></textarea>
+							        <span id="content-info" class="info"></span>
+
+							      <input class="button wide blue round  ae-10 button-55 done" type="submit" name="submit" value="Send message" onclick="sendContact(); return false;">
+							    </form> -->
+
 							</li>
 							<li><img class="img-scissors" src="img/img-scissors.png"></li>
 						</ul>

@@ -1,0 +1,23 @@
+/*------------------------------------------------- 
+CUSTOM STYLES
+-------------------------------------------------*/
+
+label.error {
+    color: red;
+    font-size: 14px
+}
+
+span.info {
+    color: red;
+    font-size: 14px
+}
+
+#register-form label.error,.output {
+    color: #FB3A3A;
+    font-weight: 700
+}
+
+.success {
+    color: #27ae60;
+    font-weight: 700
+}
