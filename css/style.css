@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: Open Sans, Arial, sans-serif;
+	font-family: 'Open Sans', Verdana, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	width: 100%;
@@ -356,6 +356,10 @@ header {
 		resize: none;
 	}
 
+	.feedback-textarea:focus {
+		background-color: #181818;
+	}
+
 	.feedback-input-name {
 		font-size: 13px;
 		color: #fff;
@@ -370,6 +374,10 @@ header {
 		outline: none;
 	}
 
+	.feedback-input-name:focus {
+		background-color: #181818;
+	}
+
 	.feedback-input-mail {
 		font-size: 13px;
 		color: #fff;
@@ -382,6 +390,10 @@ header {
 		border-width: 2px;
 		background-color: #1F1F1F;
 		outline: none;
+	}
+
+	.feedback-input-mail:focus {
+		background-color: #181818;
 	}
 
 	a.send_button {
@@ -482,7 +494,7 @@ p.footer-adress {
 /* Страница курса */
 
 .two-columns {
-	height: 900px;
+	height: 980px;
 }
 
 	/* Левая колонка */
