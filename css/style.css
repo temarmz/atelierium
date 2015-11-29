@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'PT Rouble';
+    src: url(fonts/RUBSN.otf);
+   }
+
+.rubl {
+	font-family: 'PT Rouble';
+}
+
 body {
 	font-family: Open Sans, Arial, sans-serif;
 	font-size: 13px;

@@ -13,7 +13,7 @@ $message_content = "Вам пришло письмо из формы обрат�
 
 
 if(mail($toEmail, 'Contact Form Message', $message_content, $mailHeaders)) {
-	print "<p class='Сообщение отправлено.</p>";
+	print "<br><p class='Сообщение отправлено.</p><br>";
 } else {
 	print "<p class='Error'>Problem in Sending Mail.</p>";
 }
