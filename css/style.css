@@ -12,7 +12,7 @@ body {
 	font-size: 13px;
 	line-height: 24px;
 	width: 100%;
-	color: #333;
+	color: #000;
 }
 
 .wrap {
@@ -29,6 +29,10 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+li {
+	list-style: none;
 }
 
 #map {
@@ -62,20 +66,20 @@ a.white:hover {
 /* Черные */
 
 a.black:link {
-	color: #333;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	text-decoration: none;
 }
 
 a.black:visited {
-	color: #333;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	text-decoration: none;
 }
 
 a.black:hover {
 	color: #666;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	text-decoration: none;
 }
 
@@ -133,24 +137,35 @@ p.text-under-header {
 /* Шапка */
 
 header {
-	height: 180px;
-}
-
-.header_contacts {
-	width: 120px;
-	float: left;
-	padding-top: 62px;
+	height: 150px;
 }
 
 .header_logo {
 	float: left;
-	padding: 22px 0 0 265px;
+	padding-top: 34px;
+	width: 250px;
+}
+
+.header_contacts {
+	width: 230px;
+	float: left;
+	padding: 34px 0 0 165px;
 }
 
 .header_adress {
+	width: 230px;
 	float: left;
 	text-align: left;
-	padding: 76px 0 0 215px;
+	padding: 34px 0 0 40px;
+}
+
+p.header_small {
+	font-size: 11px;
+	color: #7F7F7F;
+}
+
+p.phone {
+	font-size: 16px;
 }
 
 /* Фоторама */
@@ -174,7 +189,7 @@ header {
 }
 
 .tabbed > input {
-  display: none;
+	display: none;
 }
 
 .tabbed > label {
@@ -187,7 +202,7 @@ header {
 }
 
 .tabbed > input:checked + label {
-  border: none;
+ 	border: none;
 }
 
 .tabs > div {
@@ -276,7 +291,7 @@ header {
 	float: left;
 	width: 540px;
 	padding-right: 100px;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 28px;
 
 }
@@ -291,7 +306,7 @@ header {
 
 .content-news-feedback {
 	color: #fff;
-	background-color: #292929;
+	background-color: #222;
 	height: 660px;
 	margin-top: 1100px;
 	padding-top: 50px;
@@ -441,7 +456,7 @@ header {
 
 .footer {
 	height: 240px;
-	background-color: #292929;
+	background-color: #222;
 	color: #fff;
 }
 
@@ -504,7 +519,7 @@ p.footer-adress {
 	.right-column {
 		width: 266px;
 		padding: 17px 22px 22px 22px;
-		background-color: #292929;
+		background-color: #222;
 		color: #fff;
 		float: left;
 		margin-top: 10px;
@@ -590,7 +605,7 @@ tr {
 }
 
 tr.table-header {
-	background-color: #292929;
+	background-color: #222;
 	color: white;
 	height: 80px;
 }
