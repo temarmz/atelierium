@@ -174,6 +174,15 @@ p.header_small {
 
 p.phone {
 	font-size: 16px;
+	text-decoration: none;
+	color: black;
+}
+
+p.phone a {
+	font-size: 16px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	color: black;
 }
 
 /* Фоторама */
@@ -505,6 +514,19 @@ p.footer-adress {
 	padding-bottom: 10px;
 	font-size: 11px;
 	color: #7F7F7F;
+}
+
+span.footer-phone {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+
+span.footer-phone a {
+	font-size: 14px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+	color: #fff;
 }
 
 .name {
