@@ -1,15 +1,17 @@
 @font-face {
-    font-family: 'PT Rouble';
-    src: url(fonts/RUBSN.otf);
+    font-family: 'HelveticaNeue';
+    src: url(fonts/HelveticaNeue.ttf);
+
+    font-family: 'Helvetica Neue-Italic';
+    src: url(fonts/HelveticaNeue-Italic.ttf);
+
+    font-family: 'HelveticaNeue-Medium';
+    src: url(fonts/HelveticaNeue-Medium.ttf);
    }
 
-.rubl {
-	font-family: 'PT Rouble';
-}
-
 body {
-	font-family: 'Open Sans', Verdana, sans-serif;
-	font-size: 13px;
+	font-family: 'HelveticaNeue', Arial, sans-serif;
+	font-size: 14px;
 	line-height: 24px;
 	width: 100%;
 	color: #000;
@@ -53,13 +55,13 @@ a.white:link {
 
 a.white:visited {
 	color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	text-decoration: none;
 }
 
 a.white:hover {
-	color: #ccc;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 	text-decoration: none;
 }
 
@@ -78,8 +80,8 @@ a.black:visited {
 }
 
 a.black:hover {
-	color: #666;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 	text-decoration: none;
 }
 
@@ -98,8 +100,8 @@ a.grey:visited {
 }
 
 a.grey:hover {
-	color: #706F6F;
-	border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+	color: #7F7F7F;
+	border-bottom: 1px solid rgba(127, 127, 127, 0.8);
 	text-decoration: none;
 }
 
@@ -109,16 +111,16 @@ a.grey:hover {
 
 .header {
 	font-size: 30px;
-	font-weight: 600;
 	line-height: 44px;
+	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 }
 
 /* Заголовок (инлайновый) */
 
 .header-inline {
 	font-size: 30px;
-	font-weight: 600;
 	line-height: 44px;
+	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 	display: inline;
 }
 
@@ -132,6 +134,12 @@ p.text-under-header {
 
 .text-base {
 	padding: 30px 0 30px 0;
+}
+
+/* Жирный текст */
+
+b {
+	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 }
 
 /* Шапка */
@@ -149,11 +157,11 @@ header {
 .header_contacts {
 	width: 230px;
 	float: left;
-	padding: 34px 0 0 165px;
+	padding: 34px 0 0 144px;
 }
 
 .header_adress {
-	width: 230px;
+	width: 255px;
 	float: left;
 	text-align: left;
 	padding: 34px 0 0 40px;
@@ -194,10 +202,19 @@ p.phone {
 
 .tabbed > label {
 	font-size: 30px;
-	font-weight: 600;
+	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 	margin-right: 30px;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	border-style: dashed;
+}
+
+.tabbed > label:hover {
+	font-size: 30px;
+	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
+	margin-right: 30px;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 	border-style: dashed;
 }
 
@@ -264,6 +281,7 @@ p.phone {
 
 		.course-about {
 			padding-left: 18px;
+			font-size: 13px;
 		}
 
 		.course-price-1 {
@@ -312,20 +330,21 @@ p.phone {
 	padding-top: 50px;
 }
 
+	/* Заголовок */
+
 	.news-feedback-header {
 		font-size: 16px;
 		color: #7F7F7F;
 		padding-bottom: 35px;
 		letter-spacing: 3px;
-		font-weight: 600;
 	}
 
 	/* Новости */
 
 	.news {
-		width: 376px;
+		width: 370px;
 		float: left;
-		padding-right: 20px;
+		padding-right: 26px;
 		height: 500px;
 	}
 
@@ -337,7 +356,7 @@ p.phone {
 
 	.p-header {
 		font-size: 15px;
-		font-weight: 600;
+		font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 		margin: 5px 0 15px 0;
 	}
 
@@ -363,6 +382,7 @@ p.phone {
 		background-color: #1F1F1F;
 		outline: none;
 		resize: none;
+		font-family: Arial;
 	}
 
 	.feedback-textarea:focus {
@@ -381,6 +401,7 @@ p.phone {
 		border-width: 2px;
 		background-color: #1F1F1F;
 		outline: none;
+		font-family: Arial;
 	}
 
 	.feedback-input-name:focus {
@@ -399,6 +420,7 @@ p.phone {
 		border-width: 2px;
 		background-color: #1F1F1F;
 		outline: none;
+		font-family: Arial;
 	}
 
 	.feedback-input-mail:focus {
@@ -444,11 +466,10 @@ p.phone {
 
 	.insta-header {
 		font-size: 30px;
-		font-weight: 600;
+		font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
 	}
 
 	.vk-text {
-		font-size: 13px;
 		padding-top: 14px;
 	}
 
