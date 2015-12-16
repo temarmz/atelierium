@@ -634,52 +634,75 @@ span.footer-phone a {
 }
 
 
-/* Расписания */
+/* Расписание курсов */
 
 table {
 	width: 920px;
-	border-color: black;
 	margin-bottom: 60px;
-}
-
-tr {
 	text-align: left;
-	border-color: black;
 }
 
-tr.table-header {
-	background-color: #222;
-	color: white;
-	height: 80px;
-}
+	tr.table-header {
+		font-size: 10px;
+		color: #7F7F7F;
+		letter-spacing: 2px;
+		border-bottom: 1px solid #7F7F7F;
+		font-family: 'HelveticaNeue', Arial, sans-serif;
+	}
 
-th {
-	padding: 10px 20px 10px 20px;
-}
+	tr.bg-grey {
+		background-color: #F2F2F2;
+	}
 
-tr.bg-grey {
-	background-color: #F2F2F2;
-}
+	th {
+		padding: 10px 20px 0 20px;
+	}
 
-th.col-name {
-	width: 220px;
-}
+	th.col-name {
+		width: 236px;
+	}
 
-th.col-cost-one {
-	width: 100px;
-}
+	th.col-time {
+		width: 180px;
+	}
 
-th.col-cost-two {
-	width: 100px;
-}
+	th.col-data {
+		width: 130px;
+	}
 
-td {
-	padding: 25px 20px 25px 20px;
-}
+	th.col-cost {
+		width: 220px;
+	}
+
+	td {
+		padding: 25px 20px;
+	}
+
+	/* Информация под загловком курса */
+
+	.table-header-info {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+		/* Бейдж */
+
+		.badge-new-mini {
+			font-size: 8px;
+			display: inline;
+			letter-spacing: 1.6px;
+			color: #000;
+			height: 18px;
+			text-align: center;
+			padding: 4px 8px;
+			margin-right: 18px;
+			border: 1px solid #222;
+		}
+
+		/* Мелкий текст */
+
+		.small-text {
+			font-size: 12px;
+		}
 
 
-/* Все новости */
-
-.news-all {
-
-}
