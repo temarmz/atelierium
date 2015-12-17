@@ -262,6 +262,10 @@ p.phone a {
 
 /* Контент — Школа (курсы) */
 
+.tabbed {
+	height: 520px;
+}
+
 .content-courses {
 	list-style: none;
 	height: 500px;
@@ -270,15 +274,17 @@ p.phone a {
 }
 
 	li.course-one-two {
+		position: relative;
 		float: left;
-		width: 275px;
-		margin-right: 47.5px;
+		width: 285px;
+		margin-right: 32.5px;
 		box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	}
 
 	li.course-three {
+		position: relative;
 		float: left;
-		width: 275px;
+		width: 285px;
 		box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	}
 
@@ -296,19 +302,27 @@ p.phone a {
 		.course-price-1 {
 			font-size: 20px;
 			font-weight: 600;
-			padding-left: 18px;
-			margin-top: 10px;
+			padding: 12px 0 0 18px;
 		}
 
 		.course-price-2 {
 			font-size: 12px;
-			padding-left: 18px;
-			margin: 4px 0 14px 0;
+			padding: 4px 0 14px 18px;
 		}
 
 		.price-once {
 			color: #CBCBCB;
 			font-style: italic;
+		}
+
+		img.badge {
+			position: absolute;
+			top: 201px;
+		}
+
+		.dashed {
+			padding-top: 12px;
+			border-bottom: 1px dashed #CBCBCB;
 		}
 
 /* Контент — Ателье */
@@ -385,10 +399,8 @@ p.phone a {
 		color: #fff;
 		padding: 13px 12px 0 13px;
 		margin-bottom: 6px;
-		border-style: dashed;
-		border-color: #7F7F7F;
-		border-width: 2px;
 		background-color: #1F1F1F;
+		border: 1px dashed #7F7F7F;
 		outline: none;
 		resize: none;
 		font-family: Arial;
@@ -405,9 +417,7 @@ p.phone a {
 		margin-right: 10px;
 		height: 35px;
 		width: 150px;
-		border-style: dashed;
-		border-color: #7F7F7F;
-		border-width: 2px;
+		border: 1px dashed #7F7F7F;
 		background-color: #1F1F1F;
 		outline: none;
 		font-family: Arial;
@@ -424,9 +434,7 @@ p.phone a {
 		margin-right: 13px;
 		height: 35px;
 		width: 190px;
-		border-style: dashed;
-		border-color: #7F7F7F;
-		border-width: 2px;
+		border: 1px dashed #7F7F7F;
 		background-color: #1F1F1F;
 		outline: none;
 		font-family: Arial;
@@ -655,7 +663,7 @@ table {
 	}
 
 	th {
-		padding: 10px 20px 0 20px;
+			padding: 10px 20px 0 20px;
 	}
 
 	th.col-name {
@@ -685,7 +693,7 @@ table {
 		font-size: 12px;
 	}
 
-		/* Бейдж */
+		/* Бейдж-мини */
 
 		.badge-new-mini {
 			font-size: 8px;
