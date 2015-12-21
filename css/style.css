@@ -455,7 +455,7 @@ p.phone a {
 	  	background: rgb(23,22,22);
 	  	padding: 8px 27px 8px 27px;
 	  	outline: none; /* убирать контур в Mozilla */
-	} 
+	}
 	a.send_button:hover { background: rgb(29,28,28); }
 	a.send_button:active { background: rgb(0,0,0); }
 
@@ -665,7 +665,7 @@ table {
 	}
 
 	th {
-			padding: 10px 20px 0 20px;
+		padding: 10px 20px 0 20px;
 	}
 
 	th.col-name {
