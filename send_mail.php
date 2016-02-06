@@ -12,9 +12,9 @@ $message_content = "Вам пришло письмо из формы обрат�
 ".$_POST["content"]."";
 
 
-if(mail($toEmail, 'Contact Form Message', $message_content, $mailHeaders)) {
+if(mail($toEmail, 'Atelierium.ru', $message_content, $mailHeaders)) {
 	print "<br><p class='Сообщение отправлено.</p><br>";
 } else {
-	print "<p class='Error'>Problem in Sending Mail.</p>";
+	print "<p class='Error'>Проблемы при отправке.</p>";
 }
 ?>

@@ -7,6 +7,10 @@
 
     font-family: 'HelveticaNeue-Medium';
     src: url(fonts/HelveticaNeue-Medium.ttf);
+
+
+    font-family: 'PlayfairDisplay-Italic';
+    src: url(fonts/PlayfairDisplay-Italic.otf);
    }
 
 body {
@@ -65,23 +69,17 @@ a.white:hover {
 	text-decoration: none;
 }
 
-/* Черные */
+/* Черно-красные */
 
-a.black:link {
-	color: #000;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-	text-decoration: none;
-}
-
-a.black:visited {
+a.black:link, a.black:visited {
 	color: #000;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	text-decoration: none;
 }
 
 a.black:hover {
-	color: #000;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+	color: #E52E2D;
+	border-bottom: 1px solid rgba(229, 46, 45, 0.2);
 	text-decoration: none;
 }
 
@@ -202,55 +200,55 @@ p.phone a {
 
 .tabbed {
 	width: 920px;
-	margin: 20px 0 20px 0;
+	margin-top: 20px;
 }
 
-.tabbed > input {
-	display: none;
-}
+	.tabbed > input {
+		display: none;
+	}
 
-.tabbed > label {
-	font-size: 30px;
-	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
-	margin-right: 30px;
-	cursor: pointer;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	border-style: dashed;
-}
+	.tabbed > label {
+		font-size: 36px;
+		font-family: 'PlayfairDisplay-Italic', Georgia, serif;
+		font-family: 'Playfair Display', Georgia, serif;
+		font-style: italic;
+		margin-right: 40px;
+		cursor: pointer;
+		border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+	}
 
-.tabbed > label:hover {
-	font-size: 30px;
-	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
-	margin-right: 30px;
-	cursor: pointer;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-	border-style: dashed;
-}
+	.tabbed > label:hover {
+		font-size: 36px;
+		font-family: 'PlayfairDisplay-Italic', Georgia, serif;
+		font-family: 'Playfair Display', Georgia, serif;
+		font-style: italic;
+		margin-right: 40px;
+		cursor: pointer;
+		color: #E52E2D;
+		border-bottom: 1px dashed rgba(229, 46, 45, 0.8);
+	}
 
-.tabbed > input:checked + label {
- 	border: none;
-}
+	.tabbed > input:checked + label {
+	 	border: none;
+	 	color: #E52E2D;
+	}
 
-.tabs > div {
-	width: 920px;
-	display: none;
-}
+	.tabs > div {
+		display: none;
+	}
 
-#tab-nav-1 {
- 	display: none;
-}
+	#tab-nav-1:checked ~ .tabs > div:nth-of-type(1){
+	 	display: block;
+	}
 
-#tab-nav-1:checked ~ .tabs ~ div:nth-of-type(1){
- 	display: block;
-}
+	#tab-nav-1:checked ~ .tabs > div:nth-of-type(1){
+		display: block;
+	}
 
-#tab-nav-1:checked ~ .tabs > div:nth-of-type(1){
-	display: block;
-}
+	#tab-nav-2:checked ~ .tabs > div:nth-of-type(2){
+	 	display: block;
+	}
 
-#tab-nav-2:checked ~ .tabs > div:nth-of-type(2){
- 	display: block;
-}
 
 /*----------------------*/
 
@@ -332,18 +330,21 @@ p.phone a {
 
 .studio {}
 
-	.about {
-		position: relative;
-		display: inline-block;
-		width: 540px;
-		font-size: 16px;
-		line-height: 28px;
+	.about {}
+
+	#table-studio {
+		margin: 30px 0 100px 0;
+		width: 100%;
 	}
 
-	.ceo {
-		float: right;
-		width: 280px;
+	#table-studio td {
+		padding: 30px 40px;
+		text-align: center;
 	}
+
+		.td-center {
+			width: 225px;
+		}
 
 /* Новости и Обратная связь */
 

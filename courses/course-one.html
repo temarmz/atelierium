@@ -69,7 +69,8 @@
 			data-nav="false"
 			data-autoplay="5000"
 			data-width="100%"
- 			data-ratio="980/440">
+			data-maxheight="550"
+ 			data-fit="cover">
 
 			<img src="../img/fotorama/img-banner-course-1.jpg" height="440px">
 		</div>
@@ -129,11 +130,11 @@
 						<div class="right-column">
 							<div class="right-column-header">Записаться на курс</div>
 
-							<form name="write" method="post" action="input1.php">
+							<form name="write" method="post" action="../join_course.php">
 							 	<input class="write-input-name" type="text" placeholder="Имя">
 							 	<input class="write-input-mail" type="text" placeholder="Номер телефона">
 							 	<input class="write-input-mail" type="text" placeholder="Электропочта">
-							 	<a href="#" class="write_button">Записаться</a>
+							 	<a href="#" class="write_button" type="submit" name="submit" onclick="sendContact(); return false;">Записаться</a>
 							</form>
 							<br>
 							<p class="final-text">После записи мы вам позвоним или напишем на почту для уточнения деталей.</p>
