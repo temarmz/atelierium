@@ -456,11 +456,11 @@ p.phone a {
 	  	text-decoration: none; /* убирать подчёркивание у ссылок */
 	  	user-select: none; /* убирать выделение текста */
 	  	background: rgb(23,22,22);
-	  	padding: 8px 27px 8px 27px;
+	  	padding: 7px 27px 7px 27px;
 	  	outline: none; /* убирать контур в Mozilla */
 	}
-	a.send_button:hover { background: rgb(29,28,28); }
-	a.send_button:active { background: rgb(0,0,0); }
+	a.send_button:hover { background: rgb(229,46,45); }
+	a.send_button:active { background: rgb(189, 27,26); }
 
 	img.img-scissors {
 		margin: 100px 0 0 40px;
@@ -565,79 +565,101 @@ span.footer-phone a {
 	/* Левая колонка */
 
 	.left-column {
-		width: 580px;
+		width: 560px;
 		float: left;
-		padding-right: 30px;
+		margin-right: 50px;
 	}
+
+	.badge-new {
+		font-size: 11px;
+		display: inline;
+		letter-spacing: 1.6px;
+		color: #fff;
+		text-align: center;
+		padding: 8px 16px;
+		margin-right: 18px;
+		background-color: #222;
+	}
+
+	.table-course {
+		width: 560px;
+	}
+
+		th.course-col-time {
+			width: 140px;
+		}
+
+		th.course-col-data {
+			width: 40px;
+		}
+
+		th.course-col-cost {
+			width: 100px;
+		}
  
 	/* Правая колонка */
 
 	.right-column {
-		width: 266px;
-		padding: 17px 22px 22px 22px;
+		width: 240px;
+		padding: 32px;
 		background-color: #222;
 		color: #fff;
 		float: left;
 		margin-top: 10px;
+		height: 320px;
+
 	}
 
-	.right-column-header {
-		font-size: 22px;
-		padding: 6px 0 28px 0;
-	}
+		.right-column-header {
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
 
-	.write-form {
-		margin-bottom: 20px;
-	}
+		.right-column-header-2 {
+			font-size: 20px;
+		}
 
-	.final-text {
-		color: #7F7F7F;
-	}
+		.right-column-text {
+			color: #7F7F7F;
+			margin-bottom: 10px;
+			line-height: 20px;
+		}
 
-	/* Формы */
+		.btn-send-big {
+			cursor: pointer;
+			text-align: center;
+			padding: 9px 15px;
+			background-color: #000;
+		}
 
-	.write-input-name {
-		font-size: 13px;
-		color: #fff;
-		padding: 0 0 0 14px;
-		margin-right: 10px;
-		height: 35px;
-		width: 250px;
-		border-style: dashed;
-		border-color: #7F7F7F;
-		border-width: 2px;
-		background-color: #1F1F1F;
-		outline: none;
-		margin-bottom: 20px;
-	}
+		.btn-send-big:hover {
+			background-color: #E52E2D;
+		}
 
-	.write-input-mail {
-		font-size: 13px;
-		color: #fff;
-		padding: 0 0 0 14px;
-		margin-right: 13px;
-		height: 35px;
-		width: 250px;
-		border-style: dashed;
-		border-color: #7F7F7F;
-		border-width: 2px;
-		background-color: #1F1F1F;
-		outline: none;
-		margin-bottom: 20px;
-	}
+		.btn-send-big:active {
+			background-color: #BD1B1A;
+		}
 
-	a.write_button {
-		/*position: absolute;*/
-		font-size: 13px;
-	  	color: #fff;
-	  	text-decoration: none; /* убирать подчёркивание у ссылок */
-	  	user-select: none; /* убирать выделение текста */
-	  	background: rgb(23,22,22);
-	  	padding: 12px 98px;
-	  	outline: none; /* убирать контур в Mozilla */
-	} 
-	a.write_button:hover { background: rgb(29,28,28); }
-	a.write_button:active { background: rgb(0,0,0); }
+		a.btn-send-big-link {
+
+			font-size: 15px;
+		  	color: #fff;
+		  	text-decoration: none; /* убирать подчёркивание у ссылок */
+		  	user-select: none; /* убирать выделение текста */
+		  	outline: none; /* убирать контур в Mozilla */
+		}
+
+			img.btn-icon {
+				position: relative;
+				top: 3px;
+				padding-right: 10px; 
+			}
+
+			.btn-send-big-text {
+				bottom: 3px;
+				position: relative;
+			}
+
 
 
 /* Новость */
@@ -713,9 +735,5 @@ table {
 		}
 
 		/* Мелкий текст */
-
-		.small-text {
-			font-size: 12px;
-		}
 
 
