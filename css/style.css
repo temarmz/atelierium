@@ -330,10 +330,12 @@ p.phone a {
 
 .studio {}
 
-	.about {}
+	.about {
+		margin-bottom: 50px;
+	}
 
 	#table-studio {
-		margin: 30px 0 100px 0;
+		margin-bottom: 50px;
 		width: 100%;
 	}
 
