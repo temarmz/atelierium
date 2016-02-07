@@ -140,7 +140,7 @@ p.text-under-header {
 /* Наборный текст(на всю ширину) */
 
 .text-base {
-	padding: 30px 0 30px 0;
+	padding: 30px 0 60px 0;
 }
 
 /* Жирный текст */
@@ -334,7 +334,7 @@ p.phone a {
 .studio {}
 
 	.about {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		font-size: 1em;
 	}
 
@@ -359,7 +359,7 @@ p.phone a {
 	background-color: #222;
 	padding-top: 50px;
 	margin-top: 50px;
-	height: 670px;
+	height: 620px;
 }
 
 	/* Заголовок */
@@ -381,7 +381,7 @@ p.phone a {
 	}
 
 	.p-date {
-		font-size: 10px;
+		font-size: 13px;
 		margin: 0;
 		color: #7F7F7F;
 	}
