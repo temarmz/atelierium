@@ -50,6 +50,11 @@ li {
 	margin-bottom: 100px;
 }
 
+hr {
+	position: relative;
+	top: -15px;
+}
+
 /* ССЫЛКИ */
 
 /* Белые */
@@ -674,6 +679,10 @@ span.footer-phone a {
 /* Новость */
 
 .social {
+	padding-bottom: 60px;
+}
+
+.last-elem {
 	padding-bottom: 60px;
 }
 
