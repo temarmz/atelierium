@@ -1,22 +1,24 @@
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url(fonts/HelveticaNeue.ttf);
+    src: url(../fonts/HelveticaNeue.ttf);
 
     font-family: 'Helvetica Neue-Italic';
-    src: url(fonts/HelveticaNeue-Italic.ttf);
+    src: url(../fonts/HelveticaNeue-Italic.ttf);
 
     font-family: 'HelveticaNeue-Medium';
-    src: url(fonts/HelveticaNeue-Medium.ttf);
-
+    src: url(../fonts/HelveticaNeue-Medium.ttf);
 
     font-family: 'PlayfairDisplay-Italic';
-    src: url(fonts/PlayfairDisplay-Italic.otf);
+	src: url(fonts/PlayfairDisplay-Italic.eot);
+	src: local(☺), url(fonts/PlayfairDisplay-Italic.woff) format('woff'), url(fonts/PlayfairDisplay-Italic.ttf) format('truetype'), url(fonts/PlayfairDisplay-Italic.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
    }
 
 body {
 	font-family: 'HelveticaNeue', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 0.9em;
+	line-height: 1.6em;
 	width: 100%;
 	color: #000;
 }
@@ -42,9 +44,10 @@ li {
 }
 
 #map {
-	padding-top: 30px;
 	width: 550px;
 	height: 430px;
+	clear: both;
+	margin-bottom: 100px;
 }
 
 /* ССЫЛКИ */
@@ -126,6 +129,7 @@ a.grey:hover {
 
 p.text-under-header {
 	padding: 12px 0 40px 0;
+	font-size: 1em;
 }
 
 /* Наборный текст(на всю ширину) */
@@ -173,26 +177,20 @@ p.header_small {
 p.phone {
 	font-size: 16px;
 	text-decoration: none;
-	color: black;
+	color: #000;
 }
 
 p.phone a {
 	font-size: 16px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	text-decoration: none;
-	color: black;
+	color: #000;
 }
 
 /* Фоторама */
 
 .fotorama {
 	padding-bottom: 40px;
-}
-
-/* Контент (Школа и Ателье) */
-
-.content-about {
-	padding-top: 30px;
 }
 
 
@@ -332,6 +330,7 @@ p.phone a {
 
 	.about {
 		margin-bottom: 50px;
+		font-size: 1em;
 	}
 
 	#table-studio {
@@ -525,7 +524,7 @@ p.footer-header {
 
 p.footer-adress {
 	padding-bottom: 10px;
-	font-size: 11px;
+	font-size: 13px;
 	color: #7F7F7F;
 }
 
@@ -559,14 +558,13 @@ span.footer-phone a {
 /* Страница курса */
 
 .two-columns {
-	height: 980px;
+	width: 920px;
 }
 
 	/* Левая колонка */
 
 	.left-column {
 		width: 560px;
-		float: left;
 		margin-right: 50px;
 	}
 
@@ -604,10 +602,10 @@ span.footer-phone a {
 		padding: 32px;
 		background-color: #222;
 		color: #fff;
-		float: left;
 		margin-top: 10px;
-		height: 320px;
-
+		height: 335px;
+		float: right;
+		position: relative;
 	}
 
 		.right-column-header {
@@ -617,6 +615,17 @@ span.footer-phone a {
 
 		.right-column-header-2 {
 			font-size: 20px;
+		}
+
+		.phone-black {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.phone-black a {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+			text-decoration: none;
+			color: #fff;
 		}
 
 		.right-column-text {
