@@ -280,16 +280,16 @@ p.phone a {
 		box-shadow: 0 0 4px rgba(0,0,0,0.2);
 	}
 
-		.height-first-line {
-			height: 122px; /* высота 1-2-3 карточек */
+		.height-third-line {
+			height: 120px; /* высота 1-2-3-4 карточек */
 		}
 
 		.height-secong-line {
-			height: 97px; /* высота 4-5-6 карточек */
+			height: 100px; /* высота 4-5-6 карточек */
 		}
 
-		.height-third-line {
-			height: 97px; /* высота 7-8 карточек */
+		.height-first-line {
+			height: 75px; /* высота 7-8 карточек */
 		}
 
 		.course-header {
