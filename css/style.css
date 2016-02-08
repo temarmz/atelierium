@@ -117,17 +117,8 @@ a.grey:hover {
 
 .header {
 	font-size: 30px;
-	line-height: 44px;
-	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
-}
-
-/* Заголовок (инлайновый) */
-
-.header-inline {
-	font-size: 30px;
-	line-height: 44px;
-	font-family: 'HelveticaNeue-Medium', Arial, sans-serif;
-	display: inline;
+	line-height: 40px;
+	font-family: 'HelveticaNeue', Arial, sans-serif;
 }
 
 /* Текст под заголовком */
