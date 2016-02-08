@@ -362,7 +362,7 @@ p.phone a {
 	background-color: #222;
 	padding-top: 50px;
 	margin-top: 50px;
-	height: 620px;
+	height: 585px;
 }
 
 	/* Заголовок */
@@ -470,7 +470,7 @@ p.phone a {
 	a.send_button:active { background: rgb(189, 27,26); }
 
 	img.img-scissors {
-		margin: 100px 0 0 40px;
+		margin: 45px 0 0 40px;
 	}
 
 	/* Блок с социалками */
