@@ -155,14 +155,14 @@ header {
 .header_contacts {
 	width: 230px;
 	float: left;
-	padding: 34px 0 0 125px;
+	padding: 34px 0 0 115px;
 }
 
 .header_adress {
-	width: 275px;
+	width: 282px;
 	float: left;
 	text-align: left;
-	padding: 34px 0 0 40px;
+	padding: 34px 0 0 38px;
 }
 
 p.adress {
@@ -170,14 +170,14 @@ p.adress {
 }
 
 p.header_small_above {
-	font-size: 12px;
+	font-size: 13px;
 	color: #7F7F7F;
 	line-height: 18px;
 	padding-bottom: 6px;
 }
 
 p.header_small_under {
-	font-size: 12px;
+	font-size: 13px;
 	color: #7F7F7F;
 	line-height: 18px;
 }
@@ -332,7 +332,51 @@ p.phone a {
 			width: 24px;
 		}
 
-/* вкладка АТЕЛЬЕ */
+		/* Швейный класс */
+
+		hr {
+			border-color: #DEDEDE;
+			margin: 40px 0;
+		}
+
+		.sewing-class {
+			height: 230px;
+			/*background-color: red;*/
+
+			vertical-align: top;
+			margin-bottom: 100px;
+			box-shadow: 0 0 4px rgba(0,0,0,0.2);
+		}
+
+		.img-class {
+			float: left;
+		}
+
+		.class-text {
+			float: left;
+			padding: 30px;
+			width: 485px;
+		}
+
+		.class-header {
+			font-size: 30px;
+		}
+
+		.class-price {
+			font-size: 18px;
+			font-weight: 600;
+			width: 200px;
+			display: inline;
+			margin-right: 20px;
+		}
+
+		.class-price-about {
+			font-size: 13px;
+			color: #7F7F7F;
+			display: inline;
+		}
+
+/* вкладка  Студия */
 
 .studio {}
 
