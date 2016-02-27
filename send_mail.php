@@ -2,7 +2,7 @@
 <!-- PHP SEND EMAIL -->
 
 <?php
-$toEmail = "tum.arm@gmail.com";
+$toEmail = "tum.arm@gmail.com, atelierium@yandex.ru";
 
 $mailHeaders = "From: ".$_POST["userName"]." <". $_POST["userEmail"] .">\r\n";
 

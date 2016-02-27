@@ -7,7 +7,7 @@ function sendContact() {
 	valid = validateContact();
 	if(valid) {
 		jQuery.ajax({
-		url: "../at/send_mail.php",
+		url: "../send_mail.php",
 		data:'userName='+$("#name").val()+'&userEmail='+$("#email").val()+'&content='+$("#message").val(),
 		type: "POST",
 		success:function(data){
