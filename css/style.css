@@ -460,6 +460,11 @@ p.phone a {
 		outline: none;
 		resize: none;
 		font-family: Arial;
+		-webkit-appearance: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 
 	.feedback-textarea:focus {
@@ -477,6 +482,11 @@ p.phone a {
 		background-color: #1F1F1F;
 		outline: none;
 		font-family: Arial;
+		-webkit-appearance: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 
 	.feedback-input-name:focus {
@@ -494,6 +504,11 @@ p.phone a {
 		background-color: #1F1F1F;
 		outline: none;
 		font-family: Arial;
+		-webkit-appearance: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 
 	.feedback-input-mail:focus {
@@ -620,14 +635,14 @@ span.footer-phone a {
 		margin-right: 50px;
 	}
 
-	.badge-new {
+	.badge-disabled {
 		font-size: 11px;
 		display: inline;
 		letter-spacing: 1.6px;
 		color: #fff;
 		text-align: center;
 		padding: 8px 16px;
-		margin-right: 18px;
+		margin-right: 25px;
 		background-color: #222;
 	}
 
@@ -650,13 +665,13 @@ span.footer-phone a {
  
 	/* Правая колонка */
 
-	.right-column {
+	.sidebar {
 		width: 240px;
 		padding: 32px;
 		background-color: #222;
 		color: #fff;
 		margin-top: 10px;
-		height: 335px;
+		height: 305px;
 		float: right;
 		position: relative;
 	}
@@ -666,62 +681,98 @@ span.footer-phone a {
 			margin-bottom: 30px;
 		}
 
-		.right-column-header-2 {
-			font-size: 20px;
-		}
-
-		.phone-black {
-			text-decoration: none;
-			color: #fff;
-		}
-
-		.phone-black a {
-			border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-			text-decoration: none;
-			color: #fff;
-		}
-
 		.right-column-text {
 			color: #7F7F7F;
 			margin-bottom: 10px;
 			line-height: 20px;
 		}
 
-		.btn-send-big {
+		.write-input {
+			font-size: 13px;
+			color: #fff;
+			padding: 0 0 0 14px;
+			margin-bottom: 15px;
+			height: 35px;
+			width: 225px;
+			border: 1px dashed #7F7F7F;
+			background-color: #1F1F1F;
+			outline: none;
+			font-family: Arial;
+			-webkit-appearance: none;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+
+		.write-input:focus {
+			background-color: #181818;
+		}
+
+		.write-dropdown {
+			font-size: 13px;
+			color: #fff;
+			margin-bottom: 15px;
+			padding: 0 0 0 14px;
+			height: 35px;
+			width: 241px;
+			border: 1px dashed #7F7F7F;
+			background-color: #1F1F1F;
+			outline: none;
+			font-family: Arial;
+			border-radius: none;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: url(../img/dropdown-arrow@2x.svg) no-repeat right;
+			outline: none;
+		}
+
+		.btn-send {
 			cursor: pointer;
 			text-align: center;
 			padding: 9px 15px;
 			background-color: #000;
+			color: #fff;
+			border: none;
+			width: 241px;
+			height: 40px;
+			font-size: 16px;
+			-webkit-appearance: none;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			outline: none;
 		}
 
-		.btn-send-big:hover {
+		.btn-send:hover {
 			background-color: #E52E2D;
 		}
 
-		.btn-send-big:active {
+		.btn-send:active {
 			background-color: #BD1B1A;
 		}
-
-		a.btn-send-big-link {
-
-			font-size: 15px;
-		  	color: #fff;
-		  	text-decoration: none; /* убирать подчёркивание у ссылок */
-		  	user-select: none; /* убирать выделение текста */
-		  	outline: none; /* убирать контур в Mozilla */
+		
+		.btn-send-disabled {
+			text-align: center;
+			padding: 9px 15px;
+			background-color: #191919;
+			color: #5D5D5D;
+			border: none;
+			width: 241px;
+			height: 40px;
+			font-size: 16px;
+			-webkit-appearance: none;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			outline: none;
 		}
-
-			img.btn-icon {
-				position: relative;
-				top: 3px;
-				padding-right: 10px; 
-			}
-
-			.btn-send-big-text {
-				bottom: 3px;
-				position: relative;
-			}
-
 
 
 /* Новость */
@@ -799,7 +850,5 @@ table {
 			margin-right: 18px;
 			border: 1px solid #222;
 		}
-
-		/* Мелкий текст */
 
 

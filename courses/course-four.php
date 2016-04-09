@@ -3,20 +3,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Швейный класс</title>
+		<title>Трикотаж. Конструирование и технология пошива</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
 		<link href="../css/style.css" rel="stylesheet">
-
-		<!-- Фоторама -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-		<!-- ЯКарты -->
-		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    	<script src="mapbasics.js" type="text/javascript"></script>
 
     	<!-- Фавиконка -->
 		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
@@ -70,18 +61,6 @@
 			<hr>
 		</div>
 
-		<!-- Фоторама -->
-		<!-- <div class="fotorama"
-			data-allowfullscreen="true"
-			data-nav="false"
-			data-autoplay="5000"
-			data-width="100%"
-			data-maxheight="550"
- 			data-fit="cover">
-
-			<img src="../img/fotorama/img-banner-course-1.jpg" height="440px">
-		</div> -->
-
 		<!-- Контент -->
 		<div class="content">
 			<div class="wrap">
@@ -90,56 +69,60 @@
 
 						<!-- Правая колонка -->
 
-						<div class="right-column">
-							<div class="right-column-header">Записаться</div>
+						<div class="sidebar">
+							<div class="right-column-header">Запись закрыта</div>
 
-							<p class="right-column-text">Позвонить по телефону</p>
-							<p class="right-column-header-2 phone-black">+7 (903) 692–79–71</p>
-							<br>
+							<form method="post" autocomplete="off">
 
-							<p class="right-column-text">Отправить письмо</p>
-							<a class="btn-send-big-link" href="mailto:atelierium@yandex.ru?subject=Запись в &quot;Швейный класс&quot;">
-								<div class="btn-send-big">
-									<img class="btn-icon" src="../img/icon_mail@2x.png" alt="Почта" width="24px;">
-									<span class="btn-send-big-text">Написать на почту</span>
-								</div>
-							</a>
-							
-							<br>
-							<p class="right-column-text">Отправить сообщение во Вконтакте</p>
-							<a class="btn-send-big-link" href="https://vk.com/katykivi" target="_blank">
-								<div class="btn-send-big">
-									<img class="btn-icon" src="../img/icon_vk@2x.png" alt="Вк" width="24px;">
-									<span class="btn-send-big-text">Написать сообщение</span>
-								</div>
-							</a>
+								<p><input type="hidden" id="courseName" name="courseName" value="Трикотаж. Конструирование и технология пошива" disabled="disabled"></p>
+
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								
+
+								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+									
+									<option id="one_option">
+										По воскресеньям с 11:00 до 18:00
+									</option>
+									
+								</select>
+
+								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Трикотаж. Конструирование и технология пошива'); return false;" disabled="disabled"/></p>
+							</form>
 						</div>
 
 						<!-- Левая колонка -->
 
 						<div class="left-column">
 
-							<div class="header">Швейный класс</div>
+							<div class="header">Мастер-курс «Трикотаж. Конструирование и&nbsp;технология пошива»</div>
 							
 							<p class="text-under-header">
-								<span class="badge-new">НОВИНКА</span>
+								<span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span>
+								Для начинающих
 							</p>
 
 							<p>
-								Это уроки практического шитья, на которых учащиеся разбирают вопросы, возникшие у них в процессе самостоятельного пошива вместе с преподавателем.
+								Курс проходит в режиме «мастер-класса». На занятиях учащиеся изучают виды трикотажа, особенности обработки трикотажа, конструирование футболки и брюк. По итогу мастер-курса у вас будет два сшитых изделия.
 							</p>
 
 							<table class="table-course">
 								<!-- Заголовок таблицы -->
 								<tr class="table-header">
 									<th class="course-col-time">ВРЕМЯ ПРОВЕДЕНИЯ</th>
+									<th class="course-col-data">ПРОДОЛЖИТЕЛЬНОСТЬ</th>
 									<th class="course-col-cost">СТОИМОСТЬ</th>
 								</tr>
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 10:00 до 15:00</p><p>среда</p></td>
-									<td><b>200 руб./час</b> (оплата минимум за 2 часа)</td>
+									<td><p>с 11:00 до 18:00</p><p>воскресенье</p><p>(2 занятия, 14 часов)</p> </td>
+									<td>с 14 февраля по 21 февраля</td>
+									<td><b>4000 руб.</b> (единовременно)</td>
 								</tr>
 
 							</table>
@@ -147,11 +130,11 @@
 							<!-- Карта -->
 
 							<p>
-								Занятия проходят по адресу: улица Некрасова, 41, офис 304 (БЦ «Североход», офисное здание № 2, вход со стороны ул. Некрасова 3-й этаж)
+								Занятия по этому курсу проходят по адресу: улица Майорова, 8А, 1 этаж
 							</p><br>
 
 							<div id="map">
-								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HYCU-XZVNMVQuzG_V8xKoF1DiBNvdAYI&width=550&height=430&lang=ru_RU&sourceType=constructor">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zr-VuhEAn43rfLt3QUoNxF1zc-37c48L&width=550&height=430&lang=ru_RU&sourceType=constructor">
 								</script>
 							</div>
 						</div>
@@ -178,6 +161,14 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Обработка формы -->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="../js/val_write_submit.js"></script>
+		
+		<!-- ЯКарты -->
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    	<script src="mapbasics.js" type="text/javascript"></script>
 
 		<!-- Yandex.Metrika counter -->
 			<script type="text/javascript">

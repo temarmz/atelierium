@@ -3,20 +3,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Конструирование, моделирование и технология пошива юбки</title>
+		<title>Конструирование, моделирование и технология пошива брюк</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
 		<link href="../css/style.css" rel="stylesheet">
-
-		<!-- Фоторама -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-		<!-- ЯКарты -->
-		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    	<script src="mapbasics.js" type="text/javascript"></script>
 
     	<!-- Фавиконка -->
 		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
@@ -70,18 +61,6 @@
 			<hr>
 		</div>
 
-		<!-- Фоторама -->
-		<!-- <div class="fotorama"
-			data-allowfullscreen="true"
-			data-nav="false"
-			data-autoplay="5000"
-			data-width="100%"
-			data-maxheight="550"
- 			data-fit="cover">
-
-			<img src="../img/fotorama/img-banner-course-1.jpg" height="440px">
-		</div> -->
-
 		<!-- Контент -->
 		<div class="content">
 			<div class="wrap">
@@ -90,43 +69,44 @@
 
 						<!-- Правая колонка -->
 
-						<div class="right-column">
+						<div class="sidebar">
 							<div class="right-column-header">Записаться на курс</div>
 
-							<p class="right-column-text">Позвонить по телефону</p>
-							<p class="right-column-header-2 phone-black">+7 (903) 692–79–71</p>
-							<br>
+							<form method="post" autocomplete="off">
 
-							<p class="right-column-text">Отправить письмо</p>
-							<a class="btn-send-big-link" href="mailto:atelierium@yandex.ru?subject=Запись на курс &quot;Конструирование, моделирование и технология пошива юбки&quot;">
-								<div class="btn-send-big">
-									<img class="btn-icon" src="../img/icon_mail@2x.png" alt="Почта" width="24px;">
-									<span class="btn-send-big-text">Написать на почту</span>
-								</div>
-							</a>
-							
-							<br>
-							<p class="right-column-text">Отправить сообщение во Вконтакте</p>
-							<a class="btn-send-big-link" href="https://vk.com/katykivi" target="_blank">
-								<div class="btn-send-big">
-									<img class="btn-icon" src="../img/icon_vk@2x.png" alt="Вк" width="24px;">
-									<span class="btn-send-big-text">Написать сообщение</span>
-								</div>
-							</a>
+								<p><input type="hidden" id="courseName" name="courseName" value="Конструирование, моделирование и технология пошива брюк" disabled="disabled"></p>
+
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								
+
+								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+									
+									<option id="one_option">
+										По средам с 18:00 до 22:00
+									</option>
+									
+								</select>
+
+								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива брюк'); return false;" disabled="disabled"/></p>
+							</form>
 						</div>
 
 						<!-- Левая колонка -->
 
 						<div class="left-column">
 
-							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива юбки»</div>
+							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива брюк»</div>
 							
 							<p class="text-under-header">
-								Для начинающих
+								С навыками шитья
 							</p>
 
 							<p>
-								На курсе учащиеся изучают конструирование, моделирование и технологию юбки. Чем отличается юбка-карандаш и юбка-«саронг», обтачка или пояс, прямой силуэт или трапеция, разрез или шлица — эти, и другие термины вы изучите на данном курсе. По итогу курса у вас будет две сшитые юбки.
+								На данном курсе Вы изучите конструирование базовой конструкции брюк, моделирование различных фасонов брюк на базовой основе. По итогу курса у вас будут сшитые вами брюки.
 							</p>
 
 							<table class="table-course">
@@ -139,13 +119,12 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 18:00 до 22:00</p><p>пятница</p><p>(10 занятий, 40 часов)</p> </td>
-									<td>с 29 января по 15 апреля</td>
-									<td><b>7200 руб.</b> (единовременно)
+									<td><p>с 18:00 до 22:00</p><p>среда</p><p>(10 занятий, 40 часов)</p> </td>
+									<td>с 16 марта по 18 мая</td>
+									<td><b>8400 руб.</b> (единовременно)
 									<br>
-									<div class="small-text"><b>11 200 руб.</b> (в рассрочку)</div></td>
+									<div class="small-text"><b>12 400 руб.</b>(в рассрочку)</div></td>
 								</tr>
-
 							</table>
 
 							<!-- Карта -->
@@ -182,6 +161,14 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Обработка формы -->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="../js/val_write_submit.js"></script>
+		
+		<!-- ЯКарты -->
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    	<script src="mapbasics.js" type="text/javascript"></script>
 
 		<!-- Yandex.Metrika counter -->
 			<script type="text/javascript">
