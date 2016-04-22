@@ -3,7 +3,7 @@
 	/*---------   SEND ADMINS MAIL   ---------*/
 	
 
-	$adminEmail = "tum.arm@gmail.com";
+	$adminEmail = "tum.arm@gmail.com, atelierium@yandex.ru";
 
 	$mailAdminHeaders = "From: ATELIERIUM.ru <atelierium@yandex.ru>\r\n";
 	$mailAdminHeaders .= 'MIME-Version: 1.0' . "\r\n";
@@ -39,7 +39,7 @@
 		</style>
 
 		<body>
-			<img src="http://atelierium.ru/img/logo-mail@2x.png" width="80px" alt="Логотип">
+			<img src="http://atelierium.ru/img/logo-mail.png" width="80px" alt="Логотип">
 			<h1>На сайте Atelierium.ru кто-то записался на курс!</h1>
 
 			<br />
@@ -108,7 +108,7 @@
 		</style>
 
 		<body>
-			<img src="http://atelierium.ru/img/logo-mail@2x.png" width="80px" alt="Логотип">
+			<img src="http://atelierium.ru/img/logo-mail.png" width="80px" alt="Логотип">
 			<h1>Вы записались на курс на сайте Atelierium.ru!</h1>
 
 			<br />

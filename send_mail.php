@@ -2,7 +2,7 @@
 <!-- PHP SEND EMAIL -->
 
 <?php
-$toEmail = "tum.arm@gmail.com";
+$toEmail = "tum.arm@gmail.com, atelierium@yandex.ru";
 
 $mailHeaders = "From: ".$_POST["userName"]." <". $_POST["userEmail"] .">\r\n";
 $mailHeaders .= 'MIME-Version: 1.0' . "\r\n";
@@ -34,7 +34,7 @@ $message_content = '
 		</style>
 
 		<body>
-			<img src="http://atelierium.ru/img/logo-mail@2x.png" width="80px" alt="Логотип">
+			<img src="http://atelierium.ru/img/logo-mail.png" width="80px" alt="Логотип">
 			<h1>Вам пришло письмо из формы обратной связи Atelierium.ru!</h1>
 
 			<br />

@@ -7,7 +7,7 @@ function sendFeedbackData() {
 	valid = validateContact();
 	if(valid) {
 		jQuery.ajax({
-		url: "send_mail.php",
+		url: "../send_mail.php",
 		data:'userName='+$("#name").val()+'&userEmail='+$("#email").val()+'&content='+$("#message").val(),
 		type: "POST",
 		success:function(data){
@@ -57,8 +57,6 @@ function validateContact() {
     else {
 		$("#message").css('border-color','#7F7F7F');
 	}
-	
-	document.getElementById('success-message').value = nameCourse;
 	
 	return valid;
 }
