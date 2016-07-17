@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Конструирование, моделирование и технология пошива юбки</title>
+		<title>Технология пошива швейных изделий</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
@@ -70,28 +70,30 @@
 						<!-- Правая колонка -->
 
 						<div class="sidebar">
-							<div class="right-column-header">Запись закрыта</div>
+							<div class="right-column-header">Записаться на курс</div>
 
 							<form method="post" autocomplete="off">
 
-								<p><input type="hidden" id="courseName" name="courseName" value="Конструирование, моделирование и технология пошива юбки" disabled="disabled"></p>
+								<p><input type="hidden" id="courseName" name="courseName" value="Курс «Технология пошива швейных изделий»" disabled="disabled"></p>
 
-								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" /></p>
 
-								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" /></p>
 
-								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" /></p>
 								
 
-								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+								<select class="write-dropdown" id="time" name="time">
 									
 									<option id="one_option">
-										По пятницам с 18:00 до 22:00
+										Сб с 11:00 до 17:00
 									</option>
 									
 								</select>
 
-								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива юбки'); return false;" disabled="disabled"/></p>
+								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива юбки'); return false;" disabled="disabled"/></p> -->
+
+								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Курс «Технология пошива швейных изделий»'); return false;" /></p>
 							</form>
 						</div>
 
@@ -99,15 +101,19 @@
 
 						<div class="left-column">
 
-							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива юбки»</div>
+							<div class="header">Курс «Технология пошива швейных изделий»</div>
 							
 							<p class="text-under-header">
-								<span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span>
+								<!-- <span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
 								Для начинающих
 							</p>
 
 							<p>
-								На курсе учащиеся изучают конструирование, моделирование и технологию юбки. Чем отличается юбка-карандаш и юбка-«саронг», обтачка или пояс, прямой силуэт или трапеция, разрез или шлица — эти, и другие термины вы изучите на данном курсе. По итогу курса у вас будет две сшитые юбки.
+								Курс подходит как для начинающих, так и для тех, кто уже имеет навыки пошива, но хочет более углубленно изучить технологию пошива различных узлов. Также на курсе делается упор на технологию обработки.</p>
+								<br>
+								<p>В ходе обучения вы узнаете и попробуете все виды ручных и машинных стежков, отошьете основные виды воротников и карманов, петель и застежек, а также изучите все ньансы пошива рукавов.</p>
+								<br>
+								<p>Применяя навыки, в завершении курса вы сможете отшить готовое изделие.
 							</p>
 
 							<table class="table-course">
@@ -120,11 +126,11 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 18:00 до 22:00</p><p>пятница</p><p>(10 занятий, 40 часов)</p> </td>
-									<td>с 29 января по 15 апреля</td>
-									<td><b>7200 руб.</b> (единовременно)
-									<br>
-									<div class="small-text"><b>11 200 руб.</b> (в рассрочку)</div></td>
+									<td><p>с 11:00 до 17:00</p><p>суббота</p><p>(8 занятий, 48 часов)</p> </td>
+									<td>с 20 августа по&nbsp;8&nbsp;октября</td>
+									<td><b>12 400 руб.</b> (единовременно)
+									<b>15 400 руб.</b> (в рассрочку)
+									<br><i>(11 780 руб. для учащихся в нашей Школе)</i></td>
 								</tr>
 
 							</table>
@@ -132,11 +138,11 @@
 							<!-- Карта -->
 
 							<p>
-								Занятия по этому курсу проходят по адресу: улица Некрасова, 41, офис 304 (БЦ «Североход», офисное здание № 2, вход со стороны ул. Некрасова 3-й этаж)
+								Занятия по этому курсу проходят по адресу: улица Майорова, 8А, 1 этаж
 							</p><br>
 
 							<div id="map">
-								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HYCU-XZVNMVQuzG_V8xKoF1DiBNvdAYI&width=550&height=430&lang=ru_RU&sourceType=constructor">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zr-VuhEAn43rfLt3QUoNxF1zc-37c48L&width=550&height=430&lang=ru_RU&sourceType=constructor">
 								</script>
 							</div>
 						</div>

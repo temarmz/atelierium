@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Конструирование, моделирование и технология пошива брюк</title>
+		<title>Конструирование, моделирование и технология пошива пальто (жакета)</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
@@ -74,24 +74,26 @@
 
 							<form method="post" autocomplete="off">
 
-								<p><input type="hidden" id="courseName" name="courseName" value="Конструирование, моделирование и технология пошива брюк" disabled="disabled"></p>
+								<p><input type="hidden" id="courseName" name="courseName" value="Курс «Конструирование, моделирование и технология пошива пальто (жакета)»" disabled="disabled"></p>
 
-								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" /></p>
 
-								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" /></p>
 
-								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" /></p>
 								
 
-								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+								<select class="write-dropdown" id="time" name="time">
 									
 									<option id="one_option">
-										По средам с 18:00 до 22:00
+										Пн и Ср с 10:00 до 15:00
 									</option>
 									
 								</select>
 
-								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива брюк'); return false;" disabled="disabled"/></p>
+								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива брюк'); return false;" disabled="disabled"/></p> -->
+
+								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Курс «Конструирование, моделирование и технология пошива пальто (жакета)'); return false;"/></p>
 							</form>
 						</div>
 
@@ -99,14 +101,14 @@
 
 						<div class="left-column">
 
-							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива брюк»</div>
+							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива пальто (жакета)»</div>
 							
 							<p class="text-under-header">
-								С навыками шитья
+								Для продолжающих
 							</p>
 
 							<p>
-								На данном курсе Вы изучите конструирование базовой конструкции брюк, моделирование различных фасонов брюк на базовой основе. По итогу курса у вас будут сшитые вами брюки.
+								Данный курс рассчитан для учащихся с навыками шитья. Конструирование и моделирование верхней одежды практически не отличается от легкого платья, но технологическая обработка совсем другая. Учащиеся изучают весь процесс создания верхней одежды. По итогу курса у Вас будет сшитое Вами пальто или жакет.
 							</p>
 
 							<table class="table-course">
@@ -119,11 +121,11 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 18:00 до 22:00</p><p>среда</p><p>(10 занятий, 40 часов)</p> </td>
-									<td>с 16 марта по 18 мая</td>
-									<td><b>8400 руб.</b> (единовременно)
-									<br>
-									<div class="small-text"><b>12 400 руб.</b>(в рассрочку)</div></td>
+									<td><p>с 10:00 до 15:00</p><p>понедельник и среда</p><p>(19 занятий, 94 часа)</p> </td>
+									<td>с 12 сентября по&nbsp;14&nbsp;ноября</td>
+									<td><b>18 500 руб.</b> (единовременно)
+									<b>21 500 руб.</b> (в рассрочку)
+									<br><i>(17 570 руб. для учащихся в нашей Школе)</i></td>
 								</tr>
 							</table>
 

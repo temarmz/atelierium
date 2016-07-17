@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Конструирование, моделирование и технология пошива брюк</title>
+		<title>Особенности изготовления изделий из трикотажа</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
@@ -74,7 +74,7 @@
 
 							<form method="post" autocomplete="off">
 
-								<p><input type="hidden" id="courseName" name="courseName" value="Курс «Конструирование, моделирование и технология пошива брюк»" disabled="disabled"></p>
+								<p><input type="hidden" id="courseName" name="courseName" value="Мастер-курс «Особенности изготовления изделий из трикотажа»" disabled="disabled"></p>
 
 								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" /></p>
 
@@ -83,17 +83,17 @@
 								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" /></p>
 								
 
-								<select class="write-dropdown" id="time" name="time">
+								<select class="write-dropdown" id="time" name="time" >
 									
 									<option id="one_option">
-										Ср с 18:00 до 22:00
+										С 11:00 до 18:00
 									</option>
 									
 								</select>
 
-								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива брюк'); return false;" disabled="disabled"/></p> -->
+								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Трикотаж. Конструирование и технология пошива'); return false;" disabled="disabled"/></p> -->
 
-								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Курс «Конструирование, моделирование и технология пошива брюк»'); return false;"/></p>
+								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Мастер-курс «Особенности изготовления изделий из трикотажа»'); return false;" /></p>
 							</form>
 						</div>
 
@@ -101,14 +101,15 @@
 
 						<div class="left-column">
 
-							<div class="header">Курс «Конструирование, моделирование и&nbsp;технология пошива брюк»</div>
+							<div class="header">Мастер-курс «Особенности изготовления изделий из трикотажа»</div>
 							
 							<p class="text-under-header">
-								С навыками шитья
+								<!-- <span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
+								Для начинающих
 							</p>
 
 							<p>
-								На данном курсе Вы изучите конструирование базовой конструкции брюк, моделирование различных фасонов брюк на базовой основе. По итогу курса у вас будут сшитые вами брюки.
+								Курс проходит в режиме «мастер-класса». На занятиях учащиеся изучают виды трикотажа, особенности обработки трикотажа, конструирование футболки и брюк. По итогу мастер-курса у вас будет два сшитых изделия.
 							</p>
 
 							<table class="table-course">
@@ -121,23 +122,21 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 18:00 до 22:00</p><p>среда</p><p>(10 занятий, 40 часов)</p> </td>
-									<td>с 14 сентября по&nbsp;16&nbsp;ноября</td>
-									<td><b>9200 руб.</b> (единовременно)
-									<br>
-									<b>12 200 руб.</b> (в рассрочку)
-									<br><i>(8700 руб. для учащихся в нашей Школе)</i></td>
+									<td><p>с 11:00 до 18:00</p><p>(3 занятия, 21 час)</p></td>
+									<td>24, 31 июля и&nbsp;7&nbsp;августа</td>
+									<td><b>5800 руб.</b> (единовременно)
 								</tr>
+
 							</table>
 
 							<!-- Карта -->
 
 							<p>
-								Занятия по этому курсу проходят по адресу: улица Некрасова, 41, офис 304 (БЦ «Североход», офисное здание № 2, вход со стороны ул. Некрасова 3-й этаж)
+								Занятия по этому курсу проходят по адресу: улица Майорова, 8А, 1 этаж
 							</p><br>
 
 							<div id="map">
-								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HYCU-XZVNMVQuzG_V8xKoF1DiBNvdAYI&width=550&height=430&lang=ru_RU&sourceType=constructor">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zr-VuhEAn43rfLt3QUoNxF1zc-37c48L&width=550&height=430&lang=ru_RU&sourceType=constructor">
 								</script>
 							</div>
 						</div>

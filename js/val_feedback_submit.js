@@ -3,7 +3,7 @@ JAVASCRIPTS + AJAX
 -------------------------------------------------*/
 
 function sendFeedbackData() {
-	var valid;	
+	var valid;
 	valid = validateContact();
 	if(valid) {
 		jQuery.ajax({

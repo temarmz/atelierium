@@ -2,32 +2,31 @@
 
 	/*---------   SEND ADMINS MAIL   ---------*/
 	
-
 	$adminEmail = "tum.arm@gmail.com, atelierium@yandex.ru";
+
+	$subjectAdmin = "=?utf-8?B?" . base64_encode("Запись на курс")."?=";
 
 	$mailAdminHeaders = "From: ATELIERIUM.ru <atelierium@yandex.ru>\r\n";
 	$mailAdminHeaders .= 'MIME-Version: 1.0' . "\r\n";
-	$mailAdminHeaders .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$mailAdminHeaders .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
-	$messageAdminContent = 
-		'
+	$messageAdminContent = '
 		<html>
 		<head>
-		  <title>Запись на курс</title>
+			<title>Запись на курс</title>
 		</head>
 		<style type="text/css">
 			h1 {
 			    font-size: 18px; 
 			    font-family: Arial, sans-serif; 
 			    color: #222;
+			    line-height: 28px;
 			}
 			.caps {
 				letter-spacing: 2px;
 				font-size: 12px; 
 				font-weight: bold;
 				font-family: Arial;
-				padding: 7px 0;
-				border-bottom: 1px solid black;
 			}
     		#course {
 				font-size: 16px; 
@@ -36,6 +35,12 @@
     			color: #777777;
     			font-size: 12px;
     		}
+    		hr {
+				    border: none;
+				    background-color: #000;
+				    color: #000; /* Цвет линии для IE6-7 */
+				    height: 1px;
+			}
 		</style>
 
 		<body>
@@ -45,12 +50,16 @@
 			<br />
 
 			<p class="caps">НА КАКОЙ КУРС ЗАПИСАЛИСЬ</p>
+			<hr>
+
 			<p id="course">'.$_POST['courseName'].'</p>
 			<p>'.$_POST['time'].'</p>
 
 			<br />
 
 			<p class="caps">КТО ЭТО БЫЛ</p>
+			<hr>
+			
 			<p>'.htmlspecialchars($_POST['name']).'</p>
 			<p>'.$_POST['email'].'</p>
 			<p>'.$_POST['phone'].'</p>
@@ -62,7 +71,7 @@
 		</html>
 		';
 
-	if (mail($adminEmail, 'Запись на курс', $messageAdminContent, $mailAdminHeaders)) {
+	if (mail($adminEmail, $subjectAdmin, $messageAdminContent, $mailAdminHeaders)) {
 		print "<br /><p class='Сообщение отправлено.</p><br>";
 	} else {
 		print "<p class='Error'>Проблемы при отправке</p>";
@@ -74,9 +83,11 @@
 
 	$clientEmail = $_POST['email'];
 
+	$subjectClient = "=?utf-8?B?" . base64_encode("Запись на курс")."?=";
+
 	$mailClientHeaders = "From: ATELIERIUM.ru <atelierium@yandex.ru>\r\n";
 	$mailClientHeaders .= 'MIME-Version: 1.0' . "\r\n";
-	$mailClientHeaders .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$mailClientHeaders .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
 	$messageClientContent =
 		'
@@ -129,7 +140,7 @@
 		</html>
 		';
 
-	if (mail($clientEmail, 'Запись на курс', $messageClientContent, $mailClientHeaders)) {
+	if (mail($clientEmail, $subjectClient, $messageClientContent, $mailClientHeaders)) {
 		print "<br /><p class='Сообщение отправлено.</p><br>";
 	} else {
 		print "<p class='Error'>Проблемы при отправке</p>";

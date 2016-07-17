@@ -124,8 +124,12 @@ a.grey:hover {
 /* Текст под заголовком */
 
 p.text-under-header {
-	padding: 12px 0 40px 0;
+	padding: 16px 0 40px 0;
 	font-size: 1em;
+}
+
+.ml-text-under-header {
+	margin-left: 20px;
 }
 
 /* Наборный текст(на всю ширину) */
@@ -280,16 +284,12 @@ p.phone a {
 		box-shadow: 0 0 4px rgba(0,0,0,0.2);
 	}
 
-		.height-third-line {
+		.height-big {
 			height: 120px; /* высота 1-2-3-4 карточек */
 		}
 
-		.height-secong-line {
+		.height-small {
 			height: 100px; /* высота 4-5-6 карточек */
-		}
-
-		.height-first-line {
-			height: 75px; /* высота 7-8 карточек */
 		}
 
 		.course-header {
@@ -515,18 +515,20 @@ p.phone a {
 		background-color: #181818;
 	}
 
-	a.send_button {
+	.send_button {
 		position: absolute;
 		font-size: 13px;
 	  	color: #fff;
 	  	text-decoration: none; /* убирать подчёркивание у ссылок */
 	  	user-select: none; /* убирать выделение текста */
 	  	background: rgb(23,22,22);
-	  	padding: 7px 27px 7px 27px;
+	  	padding: 11px 27px 11px 27px;
 	  	outline: none; /* убирать контур в Mozilla */
+	  	border: none;
+	  	-webkit-appearance: none;
 	}
-	a.send_button:hover { background: rgb(229,46,45); }
-	a.send_button:active { background: rgb(189, 27,26); }
+	.send_button:hover { background: rgb(229,46,45); }
+	.send_button:active { background: rgb(189, 27,26); }
 
 	img.img-scissors {
 		margin: 45px 0 0 40px;

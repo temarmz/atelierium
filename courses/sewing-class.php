@@ -88,14 +88,23 @@
 									<option id="one_option">
 										С 10:00
 									</option>
-									<option id="one_option">
+									<option id="two_option">
 										С 11:00
 									</option>
-									<option id="one_option">
+									<option id="three_option">
 										С 12:00
 									</option>
-									<option id="one_option">
+									<option id="four_option">
 										С 13:00
+									</option>
+									<option id="five_option">
+										С 14:00
+									</option>
+									<option id="six_option">
+										С 15:00
+									</option>
+									<option id="six_option">
+										С 16:00
 									</option>
 									
 								</select>
@@ -111,7 +120,8 @@
 							<div class="header">Швейный класс</div>
 							
 							<p class="text-under-header">
-<!-- 								<span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
+								<!-- <span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
+								Co-working с консультацией преподавателя
 							</p>
 
 							<p>
@@ -127,8 +137,8 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 10:00 до 15:00</p><p>среда</p></td>
-									<td><b>200 руб./час</b> (оплата минимум за 2 часа)</td>
+									<td><p>с 10:00 до 17:00</p><p>пятница</p></td>
+									<td><b>250 руб./час</b> (оплата минимум за 2 часа)</td>
 								</tr>
 
 							</table>

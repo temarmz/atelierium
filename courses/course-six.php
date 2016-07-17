@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Fashion-рисунок</title>
+		<title>Модельерский рисунок</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
@@ -70,28 +70,30 @@
 						<!-- Правая колонка -->
 
 						<div class="sidebar">
-							<div class="right-column-header">Запись закрыта</div>
+							<div class="right-column-header">Записаться на курс</div>
 
 							<form method="post" autocomplete="off">
 
-								<p><input type="hidden" id="courseName" name="courseName" value="Конструирование, моделирование и технология пошива юбки" disabled="disabled"></p>
+								<p><input type="hidden" id="courseName" name="courseName" value="Курс «Модельерский рисунок»" disabled="disabled"></p>
 
-								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя"/></p>
 
-								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта"/></p>
 
-								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного"/></p>
 								
 
-								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+								<select class="write-dropdown" id="time" name="time">
 									
 									<option id="one_option">
-										По воскресеньям с 16:30 до 20:30
+										Сб с 17:30 до 21:30
 									</option>
 									
 								</select>
 
-								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива юбки'); return false;" disabled="disabled"/></p>
+								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Конструирование, моделирование и технология пошива юбки'); return false;" disabled="disabled"/></p> -->
+
+								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Курс «Модельерский рисунок»'); return false;"/></p>
 							</form>
 						</div>
 
@@ -99,19 +101,20 @@
 
 						<div class="left-column">
 
-							<div class="header">Курс «Fashion-рисунок»</div>
+							<div class="header">Курс «Модельерский рисунок»</div>
 							
 							<p class="text-under-header">
-								<span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span>
+								<!-- <span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
 								Для начинающих
 							</p>
 
 							<p>
-								При пошиве изделия очень важно представлять конечный образ, который вы хотите создать. Здесь важно и сочетание цветов, и сочетание фактур, и конечно нельзя забывать о декоративных элементах.</p>
-								<br>
-								<p>Поэтому очень кстати придется наш курс по Fashion-иллюстрации, на котором вы сможете изучить и технические особенности рисунка, а также и его художественную составляющую.</p>
-								<br>
-								Курс ведёт Анна Степанова, конструктор-модельер, преподаватель Студии Atelierium.
+								Модель платья сначала создается на бумаге, затем переносится на материал. Рисунок дает возможность увидеть линии одежды, прорисовать детали. По окончании данного курса вы научитесь: 
+								<br>• рисовать фигуру в статике и динамике, подробно с прорисовкой типажа, причесок;
+								<br>• технике рисования фактур ткани, кожи, меха, трикотажа, кружева и принтов на одежде;
+								<br>• проектированию складок и объёмов одежды из тонкой и плотной тканей на фигуру и т.д.
+								<br><br>
+								Курс ведёт Анна Степанова, конструктор-модельер, преподаватель Студии «Atelierium».
 							</p>
 
 							<table class="table-course">
@@ -124,11 +127,12 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 16:30 до 20:30</p><p>воскресенье</p><p>(10 занятий, 40 часа)</p> </td>
-									<td>с 20 марта по 29 мая</td>
-									<td><b>9800 руб.</b> (единовременно)
+									<td><p>с 17:30 до 21:30</p><p>суббота</p><p>(10 занятий, 40 часов)</p></td>
+									<td>с 10 сентября по&nbsp;12&nbsp;ноября</td>
+									<td><b>9200 руб.</b> (единовременно)
 									<br>
-									<div class="small-text"><b>13 800 руб.</b> (в рассрочку)</div></td>
+									<b>12 200 руб.</b> (в рассрочку)
+									<br><i>(8700 руб. для учащихся в нашей Школе)</i></td>
 								</tr>
 
 							</table>

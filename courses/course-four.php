@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Трикотаж. Конструирование и технология пошива</title>
+		<title>Конструирование, моделирование и технология пошива юбки, платья и блузы</title>
 
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet">
@@ -70,28 +70,30 @@
 						<!-- Правая колонка -->
 
 						<div class="sidebar">
-							<div class="right-column-header">Запись закрыта</div>
+							<div class="right-column-header">Записаться на интенсив</div>
 
 							<form method="post" autocomplete="off">
 
-								<p><input type="hidden" id="courseName" name="courseName" value="Трикотаж. Конструирование и технология пошива" disabled="disabled"></p>
+								<p><input type="hidden" id="courseName" name="courseName" value="Интенсив «Конструирование, моделирование и технология пошива юбки, платья и блузы»" disabled="disabled"></p>
 
-								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" disabled="disabled"/></p>
+								<p><input class="write-input" id="name" type="text" name="name" placeholder="Имя" /></p>
 
-								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" disabled="disabled"/></p>
+								<p><input class="write-input" id="email" type="email" name="email" placeholder="Электропочта" /></p>
 
-								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" disabled="disabled"/></p>
+								<p><input class="write-input" id="phone" type="text" name="phone" placeholder="Номер мобильного" /></p>
 								
 
-								<select class="write-dropdown" id="time" name="time" disabled="disabled">
+								<select class="write-dropdown" id="time" name="time" >
 									
 									<option id="one_option">
-										По воскресеньям с 11:00 до 18:00
+										Пн, Вт, Ср и Чт с 10:00 до 17:00
 									</option>
 									
 								</select>
 
-								<p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Трикотаж. Конструирование и технология пошива'); return false;" disabled="disabled"/></p>
+								<!-- <p><input class="btn-send-disabled" type="submit" value="Записаться" onclick="sendWriteData('Трикотаж. Конструирование и технология пошива'); return false;" disabled="disabled"/></p> -->
+
+								<p><input class="btn-send" type="submit" value="Записаться" onclick="sendWriteData('Интенсив «Конструирование, моделирование и технология пошива юбки, платья и блузы»'); return false;" /></p>
 							</form>
 						</div>
 
@@ -99,15 +101,15 @@
 
 						<div class="left-column">
 
-							<div class="header">Мастер-курс «Трикотаж. Конструирование и&nbsp;технология пошива»</div>
+							<div class="header">Интенсив «Конструирование, моделирование и технология пошива юбки, платья и блузы»</div>
 							
 							<p class="text-under-header">
-								<span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span>
-								Для начинающих
+								<!-- <span class="badge-disabled">ЗАПИСЬ ЗАКРЫТА</span> -->
+								Для начинающих, базовый
 							</p>
 
 							<p>
-								Курс проходит в режиме «мастер-класса». На занятиях учащиеся изучают виды трикотажа, особенности обработки трикотажа, конструирование футболки и брюк. По итогу мастер-курса у вас будет два сшитых изделия.
+								<!-- Описание -->
 							</p>
 
 							<table class="table-course">
@@ -120,9 +122,10 @@
 
 								<!-- Первая строка -->
 								<tr>
-									<td><p>с 11:00 до 18:00</p><p>воскресенье</p><p>(2 занятия, 14 часов)</p> </td>
-									<td>с 14 февраля по 21 февраля</td>
-									<td><b>4000 руб.</b> (единовременно)</td>
+									<td><p>с 10:00 до 17:00</p><p>понедельник, вторник, среда и четверг</p><p>(12 занятий, 84 часа)</p> </td>
+									<td>с 15 августа по&nbsp;1&nbsp;сентября</td>
+									<td><b>15 900 руб.</b> (единовременно)
+									<br><i>(15 100 руб. для учащихся в нашей Школе)</i></td>
 								</tr>
 
 							</table>
@@ -130,11 +133,11 @@
 							<!-- Карта -->
 
 							<p>
-								Занятия по этому курсу проходят по адресу: улица Майорова, 8А, 1 этаж
+								Занятия по этому курсу проходят по адресу: улица Некрасова, 41, офис 304 (БЦ «Североход», офисное здание № 2, вход со стороны ул. Некрасова 3-й этаж)
 							</p><br>
 
 							<div id="map">
-								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zr-VuhEAn43rfLt3QUoNxF1zc-37c48L&width=550&height=430&lang=ru_RU&sourceType=constructor">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HYCU-XZVNMVQuzG_V8xKoF1DiBNvdAYI&width=550&height=430&lang=ru_RU&sourceType=constructor">
 								</script>
 							</div>
 						</div>
