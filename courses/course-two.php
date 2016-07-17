@@ -45,7 +45,7 @@
 							<div class="header_block">
 								<ul class="block_items">
 									<li><span class="header_text_small_grey">Студия-ателье</span></li>
-									<li><span class="phone">+7 (903) 692-79-71</span></li>
+									<li><span class="footer-phone">+7 (903) 692-79-71</span></li>
 								</ul>
 							</div>
 						</li>
@@ -54,7 +54,7 @@
 							<div class="header_block">
 								<ul class="block_items">
 									<li><span class="header_text_small_grey">Школа</span></li>
-									<li><span class="phone">+7 (961) 158-38-84</span></li>
+									<li><span class="footer-phone">+7 (961) 158-38-84</span></li>
 								</ul>
 							</div>
 						</li>
