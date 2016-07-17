@@ -50,9 +50,8 @@ li {
 	margin-bottom: 100px;
 }
 
-hr {
-	position: relative;
-	top: -15px;
+.no-fotorama {
+	margin-bottom: 60px;
 }
 
 /* ССЫЛКИ */
@@ -147,57 +146,50 @@ b {
 /* Шапка */
 
 header {
-	height: 150px;
+	height: 90px;
+	background-color: #222;
+	color: #fff;
 }
 
-.header_logo {
-	float: left;
-	padding-top: 34px;
-	width: 250px;
-}
+	ul.header_items {
+		padding: 0;
+		float: right;
+	}
 
-.header_contacts {
-	width: 230px;
-	float: left;
-	padding: 34px 0 0 115px;
-}
+		ul.header_items li {
+			display: inline;
+		}
 
-.header_adress {
-	width: 282px;
-	float: left;
-	text-align: left;
-	padding: 34px 0 0 38px;
-}
+		.header_logo {
+			padding-top: 14px;
+			display: inline-block;
+		}
 
-p.adress {
-	padding-bottom: 10px;
-}
+		.header_block {
+			padding: 20px;
+			float: left; 
+			
+			}
 
-p.header_small_above {
-	font-size: 13px;
-	color: #7F7F7F;
-	line-height: 18px;
-	padding-bottom: 6px;
-}
+			.block_items li {
+				display: block !important;
+			}
 
-p.header_small_under {
-	font-size: 13px;
-	color: #7F7F7F;
-	line-height: 18px;
-}
+			.header_text_small_grey {
+				font-size: 12px;
+				color: #7F7F7F;
+			}
 
-p.phone {
-	font-size: 16px;
-	text-decoration: none;
-	color: #000;
-}
+			p.phone {
+				text-decoration: none;
+				color: #fff;
+			}
 
-p.phone a {
-	font-size: 16px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	text-decoration: none;
-	color: #000;
-}
+			p.phone a {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+				text-decoration: none;
+				color: #fff;
+			}
 
 /* Фоторама */
 
@@ -571,23 +563,25 @@ p.phone a {
 	color: #fff;
 }
 
+.footer-content {
+	position: relative;
+	width: 920px;
+	height: 120px;
+	padding-top: 60px;
+}
+
 ul.footer-about {
-	float: left;
-	width: 420px;
+	width: 650px;
 	text-align: left;
 	position: absolute;
-	padding-top: 44px;
 }
 
 ul.footer-developer {
-	float right;
 	text-align: right;
-	padding-top: 98px;
 }
 
 p.footer-header {
 	font-size: 16px;
-	margin-top: 20px;
 	padding-bottom: 10px;
 }
 
@@ -614,7 +608,16 @@ span.footer-phone a {
 	letter-spacing: 3px;
 }
 
+.footer-contacts li {
+	display: inline !important;
+	margin-right: 20px;
+}
 
+.li-right-bottom {
+	position: absolute;
+	right: 0;
+	bottom: 8px;
+}
 
 
 
